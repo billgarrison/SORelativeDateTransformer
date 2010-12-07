@@ -1,0 +1,26 @@
+/* 
+ SORelativeDateTransformer.strings
+ 
+ Created by StdOrbit on 12/6/10.
+ Copyright 2010 Standard Orbit Software, LLC. All rights reserved.
+ 
+ German localization courtesy of Google Translate. <http://translate.google.com>
+ */
+
+"formatTemplateForRelativePastDatePhrase" = "%d %@ vor";
+"formatTemplateForRelativeFutureDatePhrase" = "in %d %@";
+"now" = "jetzt";
+"year" = "Jahr";
+"years" = "Jahren";
+"month" = "Monat";
+"months" = "Monaten";
+"week" = "Woche";
+"weeks" = "Wochen";
+"day" = "Tag";
+"days" = "Tagen";
+"hour" = "Stunde";
+"hours" = "Stunden";
+"minute" = "Minuten";
+"minutes" = "Minuten";
+"second" = "Sekunde";
+"seconds" = "Sekunden";

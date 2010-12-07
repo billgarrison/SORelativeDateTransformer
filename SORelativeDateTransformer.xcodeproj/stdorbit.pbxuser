@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* SORelativeDateTransformer */ = {
+		activeExec = 0;
+		executables = (
+			F2A339B012AD72D200459019 /* SORelativeDateTransformer */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = F2A339B012AD72D200459019 /* SORelativeDateTransformer */;
+		activeSDKPreference = iphonesimulator4.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* SORelativeDateTransformer */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* SORelativeDateTransformer */,
+		);
+		breakpoints = (
+			F2A33A3E12AD783000459019 /* SORelativeDateTransformer.m:51 */,
+			F2A33A4912AD785200459019 /* TesterViewController.m:35 */,
+			F2A33B9512ADBEDF00459019 /* SORelativeDateTransformer.m:65 */,
+		);
+		codeSenseManager = F2A339C012AD72E300459019 /* Code sense */;
+		executables = (
+			F2A339B012AD72D200459019 /* SORelativeDateTransformer */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					620,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					580,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 313377736;
+			PBXWorkspaceStateSaveDate = 313377736;
+		};
+		perUserProjectItems = {
+			F2A33A2712AD77EB00459019 /* PlistBookmark */ = F2A33A2712AD77EB00459019 /* PlistBookmark */;
+			F2A33B5D12ADA10B00459019 /* PBXTextBookmark */ = F2A33B5D12ADA10B00459019 /* PBXTextBookmark */;
+			F2A33B5F12ADA10B00459019 /* PBXTextBookmark */ = F2A33B5F12ADA10B00459019 /* PBXTextBookmark */;
+			F2A33B6212ADA10B00459019 /* PBXTextBookmark */ = F2A33B6212ADA10B00459019 /* PBXTextBookmark */;
+			F2A33B6412ADA10B00459019 /* PBXTextBookmark */ = F2A33B6412ADA10B00459019 /* PBXTextBookmark */;
+			F2A33B6612ADA10B00459019 /* PBXTextBookmark */ = F2A33B6612ADA10B00459019 /* PBXTextBookmark */;
+			F2A33B6812ADA10B00459019 /* PBXTextBookmark */ = F2A33B6812ADA10B00459019 /* PBXTextBookmark */;
+			F2A33B6C12ADA10B00459019 /* PBXTextBookmark */ = F2A33B6C12ADA10B00459019 /* PBXTextBookmark */;
+			F2A33B6E12ADA10B00459019 /* PBXTextBookmark */ = F2A33B6E12ADA10B00459019 /* PBXTextBookmark */;
+			F2A33B7B12ADA17200459019 /* PBXTextBookmark */ = F2A33B7B12ADA17200459019 /* PBXTextBookmark */;
+			F2A33B7D12ADA17200459019 /* PBXTextBookmark */ = F2A33B7D12ADA17200459019 /* PBXTextBookmark */;
+			F2A33C0E12ADC38400459019 /* PBXTextBookmark */ = F2A33C0E12ADC38400459019 /* PBXTextBookmark */;
+			F2DD7E5A12ADC3BF00CCAE81 /* PBXTextBookmark */ = F2DD7E5A12ADC3BF00CCAE81 /* PBXTextBookmark */;
+			F2DD7E5D12ADC3BF00CCAE81 /* PBXTextBookmark */ = F2DD7E5D12ADC3BF00CCAE81 /* PBXTextBookmark */;
+			F2DD7E8012ADC3E300CCAE81 /* PBXTextBookmark */ = F2DD7E8012ADC3E300CCAE81 /* PBXTextBookmark */;
+			F2DD7E8112ADC3E300CCAE81 /* PBXTextBookmark */ = F2DD7E8112ADC3E300CCAE81 /* PBXTextBookmark */;
+		};
+		sourceControlManager = F2A339BF12AD72E300459019 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	32CA4F630368D1EE00C91783 /* SORelativeDateTransformer_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1348, 737}}";
+			sepNavSelRange = "{222, 0}";
+			sepNavVisRange = "{0, 223}";
+			sepNavWindowFrame = "{{1776, -64}, {1407, 850}}";
+		};
+	};
+	F2A339B012AD72D200459019 /* SORelativeDateTransformer */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = SORelativeDateTransformer;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	F2A339BF12AD72E300459019 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	F2A339C012AD72E300459019 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	F2A33A2712AD77EB00459019 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* SORelativeDateTransformer-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/stdorbit/Documents/hg/SORelativeDateTransformerTester/SORelativeDateTransformerTester-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	F2A33A3E12AD783000459019 /* SORelativeDateTransformer.m:51 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */;
+		functionName = "-transformedValue:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 51;
+		location = SORelativeDateTransformerTester;
+		modificationTime = 313376485.1033629;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	F2A33A4912AD785200459019 /* TesterViewController.m:35 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F2A33B3E12AD9CA400459019 /* TesterViewController.m */;
+		functionName = "-datePickerChangedValue:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 35;
+		location = SORelativeDateTransformerTester;
+		modificationTime = 313376485.103442;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	F2A33B3B12AD9CA400459019 /* SORelativeDateTransformer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1348, 740}}";
+			sepNavSelRange = "{854, 0}";
+			sepNavVisRange = "{0, 1910}";
+			sepNavWindowFrame = "{{1822, -106}, {1407, 850}}";
+		};
+	};
+	F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1369, 2299}}";
+			sepNavSelRange = "{1794, 28}";
+			sepNavVisRange = "{1518, 2772}";
+			sepNavWindowFrame = "{{1644, -109}, {1428, 1036}}";
+		};
+	};
+	F2A33B3E12AD9CA400459019 /* TesterViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {798, 659}}";
+			sepNavSelRange = "{151, 0}";
+			sepNavVisRange = "{0, 850}";
+			sepNavWindowFrame = "{{1799, -85}, {1407, 850}}";
+		};
+	};
+	F2A33B4B12ADA09A00459019 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {600, 480}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 695}";
+		};
+	};
+	F2A33B5D12ADA10B00459019 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B5E12ADA10B00459019 /* Common.strings */;
+		name = "Common.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 798;
+		vrLoc = 0;
+	};
+	F2A33B5E12ADA10B00459019 /* Common.strings */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.strings;
+		name = Common.strings;
+		path = /System/Library/Frameworks/AppKit.framework/Versions/C/Resources/English.lproj/Common.strings;
+		sourceTree = "<absolute>";
+	};
+	F2A33B5F12ADA10B00459019 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B6012ADA10B00459019 /* Preferences.strings */;
+		name = "Preferences.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 688;
+		vrLoc = 0;
+	};
+	F2A33B6012ADA10B00459019 /* Preferences.strings */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.strings;
+		name = Preferences.strings;
+		path = /System/Library/Frameworks/AppKit.framework/Versions/C/Resources/English.lproj/Preferences.strings;
+		sourceTree = "<absolute>";
+	};
+	F2A33B6212ADA10B00459019 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B6312ADA10B00459019 /* AccessibilityImageDescriptions.strings */;
+		name = "AccessibilityImageDescriptions.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 608;
+		vrLoc = 0;
+	};
+	F2A33B6312ADA10B00459019 /* AccessibilityImageDescriptions.strings */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.strings;
+		name = AccessibilityImageDescriptions.strings;
+		path = /System/Library/Frameworks/AppKit.framework/Versions/C/Resources/English.lproj/AccessibilityImageDescriptions.strings;
+		sourceTree = "<absolute>";
+	};
+	F2A33B6412ADA10B00459019 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B6512ADA10B00459019 /* Accessibility.strings */;
+		name = "Accessibility.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 869;
+		vrLoc = 4116;
+	};
+	F2A33B6512ADA10B00459019 /* Accessibility.strings */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.strings;
+		name = Accessibility.strings;
+		path = /System/Library/Frameworks/AppKit.framework/Versions/C/Resources/English.lproj/Accessibility.strings;
+		sourceTree = "<absolute>";
+	};
+	F2A33B6612ADA10B00459019 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B6712ADA10B00459019 /* TextSystem.strings */;
+		name = "TextSystem.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 709;
+		vrLoc = 0;
+	};
+	F2A33B6712ADA10B00459019 /* TextSystem.strings */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.strings;
+		name = TextSystem.strings;
+		path = /System/Library/Frameworks/AppKit.framework/Versions/C/Resources/English.lproj/TextSystem.strings;
+		sourceTree = "<absolute>";
+	};
+	F2A33B6812ADA10B00459019 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B6912ADA10B00459019 /* Spelling.strings */;
+		name = "Spelling.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1094;
+		vrLoc = 0;
+	};
+	F2A33B6912ADA10B00459019 /* Spelling.strings */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.strings;
+		name = Spelling.strings;
+		path = /System/Library/Frameworks/AppKit.framework/Versions/C/Resources/English.lproj/Spelling.strings;
+		sourceTree = "<absolute>";
+	};
+	F2A33B6C12ADA10B00459019 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B6D12ADA10B00459019 /* Document.strings */;
+		name = "Document.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1363;
+		vrLoc = 0;
+	};
+	F2A33B6D12ADA10B00459019 /* Document.strings */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.strings;
+		name = Document.strings;
+		path = /System/Library/Frameworks/AppKit.framework/Versions/C/Resources/English.lproj/Document.strings;
+		sourceTree = "<absolute>";
+	};
+	F2A33B6E12ADA10B00459019 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B4B12ADA09A00459019 /* English */;
+		name = "SORelativeDateTransformer.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 695;
+		vrLoc = 0;
+	};
+	F2A33B7B12ADA17200459019 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B3B12AD9CA400459019 /* SORelativeDateTransformer.h */;
+		name = "SORelativeDateTransformer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1240;
+		vrLoc = 0;
+	};
+	F2A33B7D12ADA17200459019 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* SORelativeDateTransformer_Prefix.pch */;
+		name = "SORelativeDateTransformerTester_Prefix.pch: 7";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 223;
+		vrLoc = 0;
+	};
+	F2A33B9512ADBEDF00459019 /* SORelativeDateTransformer.m:65 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */;
+		functionName = "-transformedValue:";
+		hitCount = 3;
+		ignoreCount = 0;
+		lineNumber = 65;
+		location = SORelativeDateTransformerTester;
+		modificationTime = 313376712.567502;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	F2A33C0E12ADC38400459019 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */;
+		name = "SORelativeDateTransformer.m: 13";
+		rLen = 0;
+		rLoc = 510;
+		rType = 0;
+		vrLen = 1103;
+		vrLoc = 0;
+	};
+	F2DD7E5A12ADC3BF00CCAE81 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B3E12AD9CA400459019 /* TesterViewController.m */;
+		name = "TesterViewController.m: 7";
+		rLen = 0;
+		rLoc = 151;
+		rType = 0;
+		vrLen = 850;
+		vrLoc = 0;
+	};
+	F2DD7E5D12ADC3BF00CCAE81 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */;
+		name = "SORelativeDateTransformer.m: 59";
+		rLen = 28;
+		rLoc = 1794;
+		rType = 0;
+		vrLen = 2772;
+		vrLoc = 1518;
+	};
+	F2DD7E8012ADC3E300CCAE81 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B3E12AD9CA400459019 /* TesterViewController.m */;
+		name = "TesterViewController.m: 7";
+		rLen = 0;
+		rLoc = 151;
+		rType = 0;
+		vrLen = 850;
+		vrLoc = 0;
+	};
+	F2DD7E8112ADC3E300CCAE81 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */;
+		name = "SORelativeDateTransformer.m: 59";
+		rLen = 28;
+		rLoc = 1794;
+		rType = 0;
+		vrLen = 2772;
+		vrLoc = 1518;
+	};
+}

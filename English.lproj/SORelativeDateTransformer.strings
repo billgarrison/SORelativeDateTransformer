@@ -1,0 +1,28 @@
+/* 
+   SORelativeDateTransformer.strings
+
+   Created by StdOrbit on 12/6/10.
+   Copyright 2010 Standard Orbit Software, LLC. All rights reserved.
+ */
+
+/* <relative time difference (1-n) > <data component name (e.g. year, month)> ago*/
+"formatTemplateForRelativePastDatePhrase" = "%d %@ ago";
+
+/* in <relative time difference (1-n) > <data component name (e.g. year, month)>*/
+"formatTemplateForRelativeFutureDatePhrase" = "in %d %@";
+
+"now" = "now";
+"year" = "year";
+"years" = "years";
+"month" = "month";
+"months" = "months";
+"week" = "week";
+"weeks" = "weeks";
+"day" = "day";
+"days" = "days";
+"hour" = "hour";
+"hours" = "hours";
+"minute" = "minute";
+"minutes" = "minutes";
+"second" = "second";
+"seconds" = "seconds";
