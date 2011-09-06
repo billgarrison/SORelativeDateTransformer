@@ -8,7 +8,7 @@
  */
 
 "formatTemplateForRelativePastDatePhrase" = "il ya %d %@";
-"formatTemplateForRelativeFutureDatePhrase" = "en %d %@";
+"formatTemplateForRelativeFutureDatePhrase" = "dans %d %@";
 "now" = "maintenant";
 "year" = "an";
 "years" = "ans";
