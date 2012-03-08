@@ -11,6 +11,18 @@
 
 @implementation SORelativeDateTransformer
 
++ (NSBundle *)bundle {
+    static NSBundle *bundle = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSURL *url = [[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:@"SORelativeDateTransformer.bundle" isDirectory:YES];
+        bundle = [[NSBundle bundleWithURL:url] retain];
+    });
+    return bundle;
+}
+
+#define SORelativeDateLocalizedString(x, y) NSLocalizedStringFromTableInBundle((x), @"SORelativeDateTransformer", [SORelativeDateTransformer bundle], (y))
+
 - (id) init
 {
 	self = [super init];
@@ -47,12 +59,12 @@
 {
 	// Return early if input is whacked
 	if ([value isKindOfClass:[NSDate class]] == NO) {
-		return NSLocalizedStringFromTable (@"now", NSStringFromClass([self class]), @"label for current date-time");
+		return SORelativeDateLocalizedString(@"now", @"label for current date-time");
 	}
 	
 	// Default return value is "now".
 	
-	id transformedValue = NSLocalizedStringFromTable (@"now", NSStringFromClass([self class]), @"label for current date-time");
+	id transformedValue = SORelativeDateLocalizedString(@"now", @"label for current date-time");
 	
 	// Obtain the date components for the relative difference between the input date and now.
 	
@@ -92,7 +104,7 @@
 			if (labs (relativeDifference) > 1) {
 				localizedDateComponentKey = [NSString stringWithFormat:@"%@s", selectorName];
 			}
-			localizedDateComponentName = NSLocalizedStringFromTable (localizedDateComponentKey, NSStringFromClass([self class]), nil);	
+			localizedDateComponentName = SORelativeDateLocalizedString(localizedDateComponentKey, nil);	
 		}
 
 		// Generate the langugage-friendly phrase representing the relative difference between the input date and now.
@@ -103,11 +115,11 @@
 
 		if (isRelativePastDate) {
 			// Fetch the string format template for relative past dates from the localization file and crunch out a formatted string.
-			NSString *pastDatePhraseTemplate = NSLocalizedStringFromTable (@"formatTemplateForRelativePastDatePhrase", NSStringFromClass([self class]), nil);
+			NSString *pastDatePhraseTemplate = SORelativeDateLocalizedString(@"formatTemplateForRelativePastDatePhrase", nil);
 			transformedValue = [NSString stringWithFormat:pastDatePhraseTemplate, relativeDifference, localizedDateComponentName];
 		} else {
 			// Fetch the string format template for relative future dates from the localization file and crunch out a formatted string.
-			NSString *futureDatePhraseTemplate = NSLocalizedStringFromTable (@"formatTemplateForRelativeFutureDatePhrase", NSStringFromClass([self class]), nil);
+			NSString *futureDatePhraseTemplate = SORelativeDateLocalizedString(@"formatTemplateForRelativeFutureDatePhrase", nil);
 			transformedValue = [NSString stringWithFormat:futureDatePhraseTemplate, labs (relativeDifference), localizedDateComponentName];
 		}
 		

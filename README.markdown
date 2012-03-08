@@ -15,15 +15,11 @@ The transformer does not provide reverse transformations; you can only transform
 
 ## How To Use ##
 
-Add the header and implementation files to your project.
+Add the source files and strings bundle to your project.
 
 	SORelativeDateTransformer.h
 	SORelativeDateTransformer.m
-	
-If you want a localization other than English, also add the .strings file.
-
 	SORelativeDataTransformer.strings
-	
 
 Instantiate an instance of SORelativeDateTransformer wherever you need to generate relative date phrases.
 
