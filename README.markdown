@@ -2,10 +2,9 @@
 
 SORelativeDateTransformer is a value transformer that generates a human-readable phrase expressing the relative difference between a given date and the current date.
 
-
 For example, when the current date-time is 2010-12-05 11:30, then
 
-... 2010-12-04 11:00 is transformed to "30 minutes ago"
+... 2010-12-05 11:00 is transformed to "30 minutes ago"
 
 ... 2010-12-01 11:00 is transformed to "5 days ago"
 
@@ -15,21 +14,22 @@ The transformer does not provide reverse transformations; you can only transform
 
 ## How To Use ##
 
-Add the source files and strings bundle to your project.
+Add the source files and localized strings bundle to your project.
 
 	SORelativeDateTransformer.h
 	SORelativeDateTransformer.m
-	SORelativeDataTransformer.strings
+	SORelativeDataTransformer.bundle
 
-Instantiate an instance of SORelativeDateTransformer wherever you need to generate relative date phrases.
+Create an instance of SORelativeDateTransformer wherever you need to generate relative date phrases.
 
 	// Display a file's creation date relative to today's date
 	NSURL *someFilePath = ...;
-	NSDictionary *fileAttribs = [[NSFileManager defaultManager] attributesOfItemAtPath:someFilePath error:NULL];
+	NSDictionary *attribs = [[NSFileManager defaultManager] attributesOfItemAtPath:someFilePath error:NULL];
 	
-	NSDate *dateModified = [fileAttribs fileModificationDate];
+	NSDate *dateModified = [attribs fileModificationDate];
 	
-	// Date modified is 2010-10-01 12:00:00TZ; current date is 2010-10-30 12:00:00TZ
+	// fileModificationDate is 2010-10-01 12:00:00TZ; 
+	// Date now is 2010-10-30 12:00:00TZ
 	
 	SORelativeDateTransformer *relativeDateTransformer = [[SORelativeDateTransformer alloc] init];
 	NSString *relativeDate = [relativeDateTransformer transformedValue: dateModified];
@@ -38,13 +38,31 @@ Instantiate an instance of SORelativeDateTransformer wherever you need to genera
 	
 ## Localization ##
 
+The accompanying bundle, `SORelativeDateTransformer.bundle`, provides localizations for the date component names and their plural forms. Included are localization files for English, French, German, and Spanish.
 
-The accompanying `SORelativeDateTransformer.strings` file provides localizations for the date component names and their plural forms. Included are localization files for English, French, German, and Spanish.
+The localization files also contains an NSString format template for expressing relative past and future dates.  
 
-The strings file also contains a localized string format template to use for relative past and future dates.  
-For past dates, the template for the English phrase is "%d %@ ago". For future dates, the template is "in %d %@".
+* For past dates, the format template for the English phrase is `"%d %@ ago"`. 
+* For future dates, the format template is `"in %d %@"`.
 
-Copy and modify the `SORelativeDateTransformer.strings` file with your own localizations.
+To add your own localizations, add an appropriate language `.lproj` subdirectory within the `SORelativeDateTransformer.bundle` directory, then add a `.strings` file with the lproj.
+
+For example, to add an Italian localization:
+
+	# Change working directory to the SORelativeDateTransformer.bundle
+	
+	cd ${PROJECT_DIR}/SORelativeDateTransformer.bundle
+	
+	# Copy the English localization subdirectory
+	# to an appropriately named lproj directory for an Italian localization
+	
+	cp -R en.lproj it.lproj
+	
+	# Edit the .strings file within the Italian lproj directory
+	# to replace the English localization values with Italian equivalents.
+	# Use your favorite UTF-16-capable text editor.
+	
+	mate it.lproj/SORelativeDateTransformer.strings
 
 ## Tester App ##
 
@@ -52,11 +70,22 @@ Included is an iOS 4 interactive testing application. You can a date from the da
 
 ## Compatibility ##
 
-SORelativeDateTransformer should be usable on iOS 3 and later, and Mac OS X 10.3 and later.
+SORelativeDateTransformer is compatible with iOS 4 and later, and Mac OS X 10.4 and later. 
 
 ## License ##
 
 Use it, hack it, but give me some love.
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">SORelativeDateFormatter</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/billgarrison" property="cc:attributionName" rel="cc:attributionURL">William Garrison</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/digdog/NSDate-RelativeDate" rel="dct:source">github.com</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="http://standardorbit.net" rel="cc:morePermissions">http://standardorbit.net</a>.
+[]()
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>
+<br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">SORelativeDateFormatter</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/billgarrison" property="cc:attributionName" rel="cc:attributionURL">William Garrison</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="http://standardorbit.net" rel="cc:morePermissions">http://standardorbit.net</a>.
 
+## Credits
+
+Bill Garrison, for the initial implementation. [github](https://github.com/billgarrison), [bitbucket](https://bitbucket.org/billgarrison)
+
+Ching-Lan 'digdog' Huang, for his NSDate category [NSDate-RelativeDate](https://github.com/digdog/NSDate-RelativeDate) upon which I based the value transformer.
+ [github](https://github.com/digdog/).
+
+Adam Ernst, for reorganizing into a cleaner layout for easier project integration. [github](https://github.com/adamjernst).
