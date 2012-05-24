@@ -7,7 +7,7 @@
  German localization courtesy of Google Translate. <http://translate.google.com>
  */
 
-"formatTemplateForRelativePastDatePhrase" = "%d %@ vor";
+"formatTemplateForRelativePastDatePhrase" = "vor %d %@";
 "formatTemplateForRelativeFutureDatePhrase" = "in %d %@";
 "now" = "jetzt";
 "year" = "Jahr";
