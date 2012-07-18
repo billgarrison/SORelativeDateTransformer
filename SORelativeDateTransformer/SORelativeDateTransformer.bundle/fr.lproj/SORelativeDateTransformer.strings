@@ -7,7 +7,7 @@
  French localization courtesy of Google Translate. <http://translate.google.com>
  */
 
-"formatTemplateForRelativePastDatePhrase" = "il ya %d %@";
+"formatTemplateForRelativePastDatePhrase" = "il y a %d %@";
 "formatTemplateForRelativeFutureDatePhrase" = "dans %d %@";
 "now" = "maintenant";
 "year" = "an";
