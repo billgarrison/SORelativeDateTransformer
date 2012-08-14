@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,31 +11,33 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		C40BE5EE150837DA00354062 /* SORelativeDateTransformer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C40BE5ED150837DA00354062 /* SORelativeDateTransformer.bundle */; };
+		F202C6FE15DAE09A0090BD6C /* TesterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F202C70015DAE09A0090BD6C /* TesterViewController.xib */; };
 		F2A33B3F12AD9CA400459019 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A33B3A12AD9CA400459019 /* AppDelegate.m */; };
 		F2A33B4012AD9CA400459019 /* SORelativeDateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */; };
 		F2A33B4112AD9CA400459019 /* TesterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A33B3E12AD9CA400459019 /* TesterViewController.m */; };
-		F2A33B5612ADA0FA00459019 /* TesterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A33B5412ADA0E900459019 /* TesterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* SORelativeDateTransformer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SORelativeDateTransformer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* RelativeDateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelativeDateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* SORelativeDateTransformer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SORelativeDateTransformer_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* SORelativeDateTransformer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SORelativeDateTransformer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* RelativeDateDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateDemo_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* RelativeDateDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RelativeDateDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C40BE5ED150837DA00354062 /* SORelativeDateTransformer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SORelativeDateTransformer.bundle; path = ../SORelativeDateTransformer/SORelativeDateTransformer.bundle; sourceTree = "<group>"; };
+		F202C6FF15DAE09A0090BD6C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TesterViewController.xib; sourceTree = "<group>"; };
+		F202C70115DAE0C90090BD6C /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/TesterViewController.xib; sourceTree = "<group>"; };
+		F202C70215DAE0D00090BD6C /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/TesterViewController.xib; sourceTree = "<group>"; };
+		F202C70315DAE0D50090BD6C /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/TesterViewController.xib; sourceTree = "<group>"; };
+		F202C70415DAE1490090BD6C /* nl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nl; path = nl.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		F2A33B3912AD9CA400459019 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2A33B3A12AD9CA400459019 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F2A33B3B12AD9CA400459019 /* SORelativeDateTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SORelativeDateTransformer.h; path = ../SORelativeDateTransformer/SORelativeDateTransformer.h; sourceTree = "<group>"; };
 		F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SORelativeDateTransformer.m; path = ../SORelativeDateTransformer/SORelativeDateTransformer.m; sourceTree = "<group>"; };
 		F2A33B3D12AD9CA400459019 /* TesterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TesterViewController.h; sourceTree = "<group>"; };
 		F2A33B3E12AD9CA400459019 /* TesterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TesterViewController.m; sourceTree = "<group>"; };
-		F2A33B5412ADA0E900459019 /* TesterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TesterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* SORelativeDateTransformer.app */,
+				1D6058910D05DD3D006BFB54 /* RelativeDateDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,7 +80,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* SORelativeDateTransformer_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* RelativeDateDemo_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -87,9 +89,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				F2A33B5412ADA0E900459019 /* TesterViewController.xib */,
-				8D1107310486CEB800E47090 /* SORelativeDateTransformer-Info.plist */,
+				F202C70015DAE09A0090BD6C /* TesterViewController.xib */,
+				8D1107310486CEB800E47090 /* RelativeDateDemo-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -118,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* SORelativeDateTransformer */ = {
+		1D6058900D05DD3D006BFB54 /* RelativeDateDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SORelativeDateTransformer" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RelativeDateDemo" */;
 			buildPhases = (
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
@@ -130,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = SORelativeDateTransformer;
+			name = RelativeDateDemo;
 			productName = SORelativeDateTransformerTester;
-			productReference = 1D6058910D05DD3D006BFB54 /* SORelativeDateTransformer.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* RelativeDateDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,8 +141,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SORelativeDateTransformer" */;
-			compatibilityVersion = "Xcode 3.1";
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RelativeDateDemo" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -151,12 +155,18 @@
 				German,
 				Klingon,
 				Spanish,
+				de,
+				es,
+				fr,
+				klingon,
+				Base,
+				nl,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* SORelativeDateTransformer */,
+				1D6058900D05DD3D006BFB54 /* RelativeDateDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -166,9 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				F2A33B5612ADA0FA00459019 /* TesterViewController.xib in Resources */,
 				C40BE5EE150837DA00354062 /* SORelativeDateTransformer.bundle in Resources */,
+				F202C6FE15DAE09A0090BD6C /* TesterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +197,21 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		F202C70015DAE09A0090BD6C /* TesterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F202C6FF15DAE09A0090BD6C /* en */,
+				F202C70115DAE0C90090BD6C /* fr */,
+				F202C70215DAE0D00090BD6C /* de */,
+				F202C70315DAE0D50090BD6C /* es */,
+				F202C70415DAE1490090BD6C /* nl */,
+			);
+			name = TesterViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -197,10 +221,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SORelativeDateTransformer_Prefix.pch;
+				GCC_PREFIX_HEADER = RelativeDateDemo_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
-				INFOPLIST_FILE = "SORelativeDateTransformer-Info.plist";
-				PRODUCT_NAME = SORelativeDateTransformer;
+				INFOPLIST_FILE = "$(SRCROOT)/RelativeDateDemo-Info.plist";
+				PRODUCT_NAME = RelativeDateDemo;
 			};
 			name = Debug;
 		};
@@ -210,9 +234,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SORelativeDateTransformer_Prefix.pch;
-				INFOPLIST_FILE = "SORelativeDateTransformer-Info.plist";
-				PRODUCT_NAME = SORelativeDateTransformer;
+				GCC_PREFIX_HEADER = RelativeDateDemo_Prefix.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/RelativeDateDemo-Info.plist";
+				PRODUCT_NAME = RelativeDateDemo;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -225,7 +249,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -238,8 +262,8 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -247,7 +271,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SORelativeDateTransformer" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RelativeDateDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -256,7 +280,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SORelativeDateTransformer" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RelativeDateDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

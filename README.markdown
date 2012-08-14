@@ -38,7 +38,7 @@ Create an instance of SORelativeDateTransformer wherever you need to generate re
 	
 ## Localization ##
 
-The accompanying bundle, `SORelativeDateTransformer.bundle`, provides localizations for the date component names and their plural forms. Included are localization files for English, French, German, and Spanish.
+The accompanying bundle, `SORelativeDateTransformer.bundle`, provides localizations for the date component names and their plural forms. Included are localization files for English, French, German, Spanish, and Dutch.
 
 The localization files also contains an NSString format template for expressing relative past and future dates.  
 
@@ -70,7 +70,7 @@ Included is an iOS 4 interactive testing application. You can a date from the da
 
 ## Compatibility ##
 
-SORelativeDateTransformer is compatible with iOS 4 and later, and Mac OS X 10.4 and later. 
+SORelativeDateTransformer is compatible with iOS 4 and later, and Mac OS X 10.4 and later. Supports use in ARC and non-ARC projects.
 
 ## License ##
 
@@ -82,9 +82,17 @@ For a non-attribution license, contact [http://standardorbit.net](http://standar
 
 ## Credits
 
-Bill Garrison, for the initial implementation. [github](https://github.com/billgarrison), [bitbucket](https://bitbucket.org/billgarrison)
+Bill Garrison, for the initial implementation. [@github](https://github.com/billgarrison), [@bitbucket](https://bitbucket.org/billgarrison)
 
 Ching-Lan 'digdog' Huang, for his NSDate category [NSDate-RelativeDate](https://github.com/digdog/NSDate-RelativeDate) upon which I based the value transformer.
- [github](https://github.com/digdog/).
+ [@github](https://github.com/digdog).
 
-Adam Ernst, for reorganizing into a cleaner layout for easier project integration. [github](https://github.com/adamjernst).
+Adam Ernst, for reorganizing into a cleaner layout for easier project integration. [@github](https://github.com/adamjernst).
+
+Markus Gasser, for correcting the German localization. [@github](https://github.com/frenetisch-applaudierend).
+
+Martin Destagnol, for correcting the French localization and pushing for ARC compatibility. [@github](https://github.com/mdestagnol).
+
+Hendrik Bruinsma, for contributing the Dutch localization. [@github](https://github.com/hbruinsma).
+
+

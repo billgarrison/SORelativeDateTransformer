@@ -7,15 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class TesterViewController;
-
-@interface AppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
-    TesterViewController *viewController;
-}
-
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet TesterViewController *viewController;
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @end
 

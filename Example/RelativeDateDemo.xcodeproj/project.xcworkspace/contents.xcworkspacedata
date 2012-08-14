@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SORelativeDateTransformer.xcodeproj">
+      location = "self:RelativeDateDemo.xcodeproj">
    </FileRef>
 </Workspace>

@@ -6,3 +6,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #endif
+
+/* For gcc/10.4/iOS4 support */
+#ifndef __has_feature
+#define __has_feature(x) 0
+#endif

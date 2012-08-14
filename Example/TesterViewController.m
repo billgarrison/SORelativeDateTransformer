@@ -10,12 +10,6 @@
 
 @implementation TesterViewController
 
-- (void)dealloc 
-{
-	[relativeDateTransformer release];
-	[super dealloc];
-}
-
 #pragma mark -
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -23,7 +17,7 @@
 {
     [super viewDidLoad];
 	relativeDateTransformer = [[SORelativeDateTransformer alloc] init];
-
+    
 	[datePicker setDate:[NSDate date]];
 	
 	[relativeDateLabel setText: [relativeDateTransformer transformedValue:[datePicker date]]];
