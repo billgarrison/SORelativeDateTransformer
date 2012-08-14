@@ -1,0 +1,27 @@
+/* 
+   SORelativeDateTransformer.strings
+
+   Created by hbruinsma on 2012-06-29.
+ */
+
+/* <relative time difference (1-n) > <data component name (e.g. year, month)> ago*/
+"formatTemplateForRelativePastDatePhrase" = "%d %@ geleden";
+
+/* in <relative time difference (1-n) > <data component name (e.g. year, month)>*/
+"formatTemplateForRelativeFutureDatePhrase" = "over %d %@";
+
+"now" = "nu";
+"year" = "jaar";
+"years" = "jaren";
+"month" = "maand";
+"months" = "maanden";
+"week" = "week";
+"weeks" = "weken";
+"day" = "dag";
+"days" = "dagen";
+"hour" = "uur";
+"hours" = "uren";
+"minute" = "minuut";
+"minutes" = "minuten";
+"second" = "seconde";
+"seconds" = "seconden";
