@@ -1,6 +1,6 @@
 /*
  Created by William Garrison on 12/6/10.
- Copyright 2010 Standard Orbit Software, LLC. All rights reserved.
+ Copyright 2010-2012 Standard Orbit Software, LLC. All rights reserved.
  Derived in part from digdog's MIT-licensed NSDate-RelativeDate category method <https://github.com/digdog/NSDate-RelativeDate>
  
  This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License <http://creativecommons.org/licenses/by-sa/3.0/">

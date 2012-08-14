@@ -1,6 +1,6 @@
 /*
  Created by William Garrison on 12/6/10.
- Copyright 2010 Standard Orbit Software, LLC. All rights reserved.
+ Copyright 2010-2012 Standard Orbit Software, LLC. All rights reserved.
  Derived in part from digdog's MIT-licensed NSDate-RelativeDate category method <https://github.com/digdog/NSDate-RelativeDate>
  
  This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License <http://creativecommons.org/licenses/by-sa/3.0/">
@@ -9,43 +9,57 @@
 
 #import "SORelativeDateTransformer.h"
 
+#ifndef __has_feature
+#define __has_feature(x) 0
+#endif
+
 @implementation SORelativeDateTransformer
 
 + (NSBundle *)bundle {
     static NSBundle *bundle = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSURL *url = [[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:@"SORelativeDateTransformer.bundle" isDirectory:YES];
-        bundle = [[NSBundle bundleWithURL:url] retain];
+        NSURL *url = [[NSBundle mainBundle] URLForResource:@"SORelativeDateTransformer" withExtension:@"bundle"];
+        bundle = [[NSBundle alloc] initWithURL:url];
     });
     return bundle;
 }
 
-#define SORelativeDateLocalizedString(x, y) NSLocalizedStringFromTableInBundle((x), @"SORelativeDateTransformer", [SORelativeDateTransformer bundle], (y))
+static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *comment) {
+    return [[SORelativeDateTransformer bundle] localizedStringForKey:key value:nil table:@"SORelativeDateTransformer"];
+}
 
 - (id) init
 {
 	self = [super init];
-	if (self) {
-		__calendar = [[NSCalendar currentCalendar] retain];
-		__unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
-		__dateComponentSelectorNames =  [[NSArray alloc] initWithObjects:@"year", @"month", @"week", @"day", @"hour", @"minute", @"second", nil];	
-	}
+	if (!self) return nil;
+    
+    __calendar = [NSCalendar autoupdatingCurrentCalendar];
+
+#if !__has_feature(objc_arc)
+    [__calendar retain];
+#endif
+    
+    __unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
+    __dateComponentSelectorNames =  [[NSArray alloc] initWithObjects:@"year", @"month", @"week", @"day", @"hour", @"minute", @"second", nil];
+	
 	return self;
 }
 
+#if !__has_feature(objc_arc)
 - (void) dealloc
 {
 	[__calendar release];
 	[__dateComponentSelectorNames release];
 	[super dealloc];
 }
+#endif
 
 #pragma mark -
 #pragma mark NSValueTransformer Overrides
 
-+ (Class) transformedValueClass 
-{ 
++ (Class) transformedValueClass
+{
 	return [NSString class];
 }
 
@@ -74,7 +88,7 @@
 	// For the first NSDateComponent time span method that returns a reasonable non-zero value, use that value to compute the relative-to-now date phrase string.
 	
 	
-	for (NSString *selectorName in __dateComponentSelectorNames) 
+	for (NSString *selectorName in __dateComponentSelectorNames)
 	{
 		// Invoke the NSDateComponent selector matching the current iteration, and obtain the component's value.
 		NSInteger relativeDifference = 0;
@@ -93,7 +107,7 @@
 		// If the relative difference between the input date and now is 0 for the date component named in this iteration, press on.
 		// e.g. no difference between the month component of input date and now, continue iterating with the hour component next to be evaluated.
 		if (relativeDifference == 0) continue;
-
+        
 		// Lookup the localized name to use for the data component in our class' strings file.
 		NSString *localizedDateComponentName = nil;
 		{
@@ -104,15 +118,15 @@
 			if (labs (relativeDifference) > 1) {
 				localizedDateComponentKey = [NSString stringWithFormat:@"%@s", selectorName];
 			}
-			localizedDateComponentName = SORelativeDateLocalizedString(localizedDateComponentKey, nil);	
+			localizedDateComponentName = SORelativeDateLocalizedString(localizedDateComponentKey, nil);
 		}
-
+        
 		// Generate the langugage-friendly phrase representing the relative difference between the input date and now.
-
+        
 		BOOL isRelativePastDate = (relativeDifference > 0); // positive values indicate a relative past date; negative values indicate a future date.
 		
 		// Use the appropriate string formatting template depending on whether the given date is a relative past or a relative future date.
-
+        
 		if (isRelativePastDate) {
 			// Fetch the string format template for relative past dates from the localization file and crunch out a formatted string.
 			NSString *pastDatePhraseTemplate = SORelativeDateLocalizedString(@"formatTemplateForRelativePastDatePhrase", nil);
