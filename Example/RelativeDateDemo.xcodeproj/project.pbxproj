@@ -16,6 +16,7 @@
 		F2A33B3F12AD9CA400459019 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A33B3A12AD9CA400459019 /* AppDelegate.m */; };
 		F2A33B4012AD9CA400459019 /* SORelativeDateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */; };
 		F2A33B4112AD9CA400459019 /* TesterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A33B3E12AD9CA400459019 /* TesterViewController.m */; };
+		F2CD10D2166402F8004A81F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CD10D1166402F8004A81F3 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SORelativeDateTransformer.m; path = ../SORelativeDateTransformer/SORelativeDateTransformer.m; sourceTree = "<group>"; };
 		F2A33B3D12AD9CA400459019 /* TesterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TesterViewController.h; sourceTree = "<group>"; };
 		F2A33B3E12AD9CA400459019 /* TesterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TesterViewController.m; sourceTree = "<group>"; };
+		F2CD10CF166401CA004A81F3 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.markdown; path = ../README.markdown; sourceTree = "<group>"; };
+		F2CD10D1166402F8004A81F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				F2CD10CF166401CA004A81F3 /* README.markdown */,
 				F2A33B3B12AD9CA400459019 /* SORelativeDateTransformer.h */,
 				F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */,
 				C40BE5ED150837DA00354062 /* SORelativeDateTransformer.bundle */,
@@ -91,6 +95,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F2CD10D1166402F8004A81F3 /* Default-568h@2x.png */,
 				F202C70015DAE09A0090BD6C /* TesterViewController.xib */,
 				8D1107310486CEB800E47090 /* RelativeDateDemo-Info.plist */,
 			);
@@ -182,6 +187,7 @@
 			files = (
 				C40BE5EE150837DA00354062 /* SORelativeDateTransformer.bundle in Resources */,
 				F202C6FE15DAE09A0090BD6C /* TesterViewController.xib in Resources */,
+				F2CD10D2166402F8004A81F3 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

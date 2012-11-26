@@ -95,4 +95,6 @@ Martin Destagnol, for correcting the French localization and pushing for ARC com
 
 Hendrik Bruinsma, for contributing the Dutch localization. [@github](https://github.com/hbruinsma).
 
+Vince Yuan, for contributing the Simplfied & Traditional Chinese localizations. [@github](https://github.com/vinceyuan).
+
 
