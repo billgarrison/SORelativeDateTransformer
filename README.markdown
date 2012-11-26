@@ -38,7 +38,7 @@ Create an instance of SORelativeDateTransformer wherever you need to generate re
 	
 ## Localization ##
 
-The accompanying bundle, `SORelativeDateTransformer.bundle`, provides localizations for the date component names and their plural forms. Included are localization files for English, French, German, Spanish, and Dutch.
+The accompanying bundle, `SORelativeDateTransformer.bundle`, provides localizations for the date component names and their plural forms. Included are localization files for English, French, German, Spanish, Dutch, Simplified Chinese, and Traditional Chinese.
 
 The localization files also contains an NSString format template for expressing relative past and future dates.  
 
@@ -95,6 +95,6 @@ Martin Destagnol, for correcting the French localization and pushing for ARC com
 
 Hendrik Bruinsma, for contributing the Dutch localization. [@github](https://github.com/hbruinsma).
 
-Vince Yuan, for contributing the Simplfied & Traditional Chinese localizations. [@github](https://github.com/vinceyuan).
+Vince Yuan, for contributing the Simplified & Traditional Chinese localizations. [@github](https://github.com/vinceyuan).
 
 
