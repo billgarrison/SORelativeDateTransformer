@@ -38,14 +38,25 @@ Create an instance of SORelativeDateTransformer wherever you need to generate re
 	
 ## Localization ##
 
-The accompanying bundle, `SORelativeDateTransformer.bundle`, provides localizations for the date component names and their plural forms. Included are localization files for English, French, German, Spanish, Dutch, Simplified Chinese, and Traditional Chinese.
+The accompanying bundle, `SORelativeDateTransformer.bundle`, provides localizations for the date component names and their plural forms. 
 
-The localization files also contains an NSString format template for expressing relative past and future dates.  
+Included localizations:
 
-* For past dates, the format template for the English phrase is `"%d %@ ago"`. 
-* For future dates, the format template is `"in %d %@"`.
+* English
+* Japanese
+* French
+* German
+* Spanish
+* Dutch
+* Simplified Chinese
+* Traditional Chinese
 
-To add your own localizations, add an appropriate language `.lproj` subdirectory within the `SORelativeDateTransformer.bundle` directory, then add a `.strings` file with the lproj.
+The localization also includes NSString-compatible format templates for phrases expressing relative past and future dates.  
+
+* For past dates, the format template for the English phrase is `"%d %@ ago"`. E.g. 20 minutes ago
+* For future dates, the format template is `"in %d %@"`. E.g. in 20 minutes
+
+To add your own localizations, copy the English localization within `SORelativeDateTransformer.bundle` directory to an appropriately named `.lproj` subdirectory, then edit the `.strings` file within that new localization subdirectory.
 
 For example, to add an Italian localization:
 
@@ -97,4 +108,6 @@ Hendrik Bruinsma, for contributing the Dutch localization. [@github](https://git
 
 Vince Yuan, for contributing the Simplified & Traditional Chinese localizations. [@github](https://github.com/vinceyuan).
 
+Brian Gesiak, for contributing the Japanese localization.
+[@github](https://github.com/modocache).
 
