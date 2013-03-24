@@ -18,6 +18,7 @@
 }
 
 - (IBAction) datePickerChangedValue:(id)sender;
+- (IBAction) relativeDepthChangeValue:(UISegmentedControl *)sender;
 
 @end
 

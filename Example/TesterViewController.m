@@ -28,4 +28,11 @@
 	[relativeDateLabel setText: [relativeDateTransformer transformedValue:[datePicker date]]];
 }
 
+- (IBAction) relativeDepthChangeValue:(UISegmentedControl *)sender
+{
+    relativeDateTransformer.relativeTransformDepth = (RelativeTransformDepth)sender.selectedSegmentIndex;
+    // update UI
+    [relativeDateLabel setText: [relativeDateTransformer transformedValue:[datePicker date]]];
+}
+
 @end

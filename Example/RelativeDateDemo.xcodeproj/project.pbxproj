@@ -42,7 +42,7 @@
 		F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SORelativeDateTransformer.m; path = ../SORelativeDateTransformer/SORelativeDateTransformer.m; sourceTree = "<group>"; };
 		F2A33B3D12AD9CA400459019 /* TesterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TesterViewController.h; sourceTree = "<group>"; };
 		F2A33B3E12AD9CA400459019 /* TesterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TesterViewController.m; sourceTree = "<group>"; };
-		F2CD10CF166401CA004A81F3 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.markdown; path = ../README.markdown; sourceTree = "<group>"; };
+		F2CD10CF166401CA004A81F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F2CD10D1166402F8004A81F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD012DB16C8311E00AF7B51 /* SORelativeDateTransformer.bundle */,
-				F2CD10CF166401CA004A81F3 /* README.markdown */,
+				F2CD10CF166401CA004A81F3 /* README.md */,
 				F2A33B3B12AD9CA400459019 /* SORelativeDateTransformer.h */,
 				F2A33B3C12AD9CA400459019 /* SORelativeDateTransformer.m */,
 				F2A33B3412AD9C7C00459019 /* Tester App Source */,

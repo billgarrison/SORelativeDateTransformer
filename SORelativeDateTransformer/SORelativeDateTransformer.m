@@ -43,6 +43,9 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
     __unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     __dateComponentSelectorNames =  [[NSArray alloc] initWithObjects:@"year", @"month", @"week", @"day", @"hour", @"minute", @"second", nil];
 	
+    __partialDateStrings = [[NSMutableArray alloc] init];
+    _relativeTransformDepth = FirstMatchOnly;
+    
 	return self;
 }
 
@@ -51,6 +54,7 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 {
 	[__calendar release];
 	[__dateComponentSelectorNames release];
+    [__partialDateStrings release];
 	[super dealloc];
 }
 #endif
@@ -76,6 +80,9 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 		return SORelativeDateLocalizedString(@"now", @"label for current date-time");
 	}
 	
+    // Clear any stored values
+    [__partialDateStrings removeAllObjects];
+    
 	// Default return value is "now".
 	
 	id transformedValue = SORelativeDateLocalizedString(@"now", @"label for current date-time");
@@ -87,7 +94,10 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 	// Iterate the array of NSDateComponent selectors, which are sorted in decreasing order of time span: year, month, day, etc.
 	// For the first NSDateComponent time span method that returns a reasonable non-zero value, use that value to compute the relative-to-now date phrase string.
 	
-	
+	// Keep track of relative transform depth, compare against desired.
+    RelativeTransformDepth currentDepth = FirstMatchOnly;
+    BOOL isRelativePastDate;
+    
 	for (NSString *selectorName in __dateComponentSelectorNames)
 	{
 		// Invoke the NSDateComponent selector matching the current iteration, and obtain the component's value.
@@ -123,27 +133,62 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
         
 		// Generate the langugage-friendly phrase representing the relative difference between the input date and now.
         
-		BOOL isRelativePastDate = (relativeDifference > 0); // positive values indicate a relative past date; negative values indicate a future date.
-		
-		// Use the appropriate string formatting template depending on whether the given date is a relative past or a relative future date.
+		isRelativePastDate = (relativeDifference > 0); // positive values indicate a relative past date; negative values indicate a future date.
         
-		if (isRelativePastDate) {
-			// Fetch the string format template for relative past dates from the localization file and crunch out a formatted string.
-			NSString *pastDatePhraseTemplate = SORelativeDateLocalizedString(@"formatTemplateForRelativePastDatePhrase", nil);
-			transformedValue = [NSString stringWithFormat:pastDatePhraseTemplate, relativeDifference, localizedDateComponentName];
-		} else {
-			// Fetch the string format template for relative future dates from the localization file and crunch out a formatted string.
-			NSString *futureDatePhraseTemplate = SORelativeDateLocalizedString(@"formatTemplateForRelativeFutureDatePhrase", nil);
-			transformedValue = [NSString stringWithFormat:futureDatePhraseTemplate, labs (relativeDifference), localizedDateComponentName];
-		}
-		
-		// Break from the date components iteration loop after finding the first one with a non-zero relative difference value.
-		break;
-		
+        // if current depth is not further than expected, collect value pair
+        if (self.relativeTransformDepth >= currentDepth) {
+            // collect the target phrase for later use
+            NSString *template = SORelativeDateLocalizedString(@"formatTemplateSingleValuePair", nil);
+            NSString *existing = [NSString stringWithFormat:template, labs (relativeDifference), localizedDateComponentName];
+            [__partialDateStrings addObject:existing];
+            currentDepth++;
+        }
 	} // for loop
 	
-	
+    NSUInteger available = [__partialDateStrings count];
+    if (available > 0) {
+        transformedValue = [self transformForDepth:available-1
+                                            isPast:isRelativePastDate];
+    }
+        
 	return transformedValue;
+}
+
+- (NSString *)transformForDepth:(RelativeTransformDepth)currentDepth
+                         isPast:(BOOL)isRelativePastDate {
+    
+    // Use the appropriate string formatting template depending on whether the given date is a relative past or a relative future date.
+    NSMutableString *transformedValue = [NSMutableString string];
+    NSString *templateForDepth;
+    if (isRelativePastDate) {
+        // Fetch the string format template for relative past dates from the localization file and crunch out a formatted string.
+        templateForDepth = [NSString stringWithFormat:@"formatTemplateForRelativePastDatePhrase_Depth%i",currentDepth];
+    } else {
+        // Fetch the string format template for relative future dates from the localization file and crunch out a formatted string.
+        templateForDepth = [NSString stringWithFormat:@"formatTemplateForRelativeFutureDatePhrase_Depth%i",currentDepth];
+    }
+    NSString *datePhraseTemplate = SORelativeDateLocalizedString(templateForDepth, nil);
+    NSScanner *scanner = [NSScanner scannerWithString:datePhraseTemplate];
+    scanner.charactersToBeSkipped = nil;
+    NSString *target = nil;
+
+    // Scan up to the %@, append the partial, move the scanner, repeat
+    for (NSString *partialString in __partialDateStrings) {
+        [scanner scanUpToString:@"%@" intoString:&target];
+        if (!target) { // check to protect against %@ at the beginning of template
+            target = @"";
+        }
+        target = [target stringByAppendingString:partialString];
+        [scanner setScanLocation:scanner.scanLocation+2];
+        [transformedValue appendString:target];
+    }
+    if (!scanner.isAtEnd) {
+        [scanner scanUpToString:@"________fin__" intoString:&target];
+        if (target) {
+            [transformedValue appendString:target];
+        }
+    }
+    return transformedValue;
 }
 
 

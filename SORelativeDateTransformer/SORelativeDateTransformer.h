@@ -28,12 +28,20 @@ SORelativeDateTransformer is a value transformer that generates a human-readable
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    FirstMatchOnly = 0,
+    IncludeSecondMatchIgnoreZero,
+    IncludeThirdMatchIgnoreZero,
+}RelativeTransformDepth;
+
 @interface SORelativeDateTransformer : NSValueTransformer
 {
 	NSCalendar *__calendar;
 	NSUInteger __unitFlags;
 	NSArray *__dateComponentSelectorNames;
+    NSMutableArray *__partialDateStrings;
 }
+@property (nonatomic) RelativeTransformDepth relativeTransformDepth;
 
 /**
 \brief Transform an NSDate into a phrase expressing the relative difference between that date and now.
