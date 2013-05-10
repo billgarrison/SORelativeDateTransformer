@@ -42,12 +42,13 @@ The accompanying bundle, `SORelativeDateTransformer.bundle`, provides localizati
 
 Included localizations:
 
+* Dutch
 * English
-* Japanese
 * French
 * German
+* Japanese
+* Portuguese
 * Spanish
-* Dutch
 * Simplified Chinese
 * Traditional Chinese
 
@@ -108,6 +109,6 @@ Hendrik Bruinsma, for contributing the Dutch localization. [@github](https://git
 
 Vince Yuan, for contributing the Simplified & Traditional Chinese localizations. [@github](https://github.com/vinceyuan).
 
-Brian Gesiak, for contributing the Japanese localization.
-[@github](https://github.com/modocache).
+Brian Gesiak, for contributing the Japanese localization. [@github](https://github.com/modocache).
 
+Paulo André G Rodrigues, for contributing the Portuguese localization. [@github](https://github.com/pauloandreget).
