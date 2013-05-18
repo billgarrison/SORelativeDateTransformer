@@ -46,6 +46,7 @@ Included localizations:
 * English
 * French
 * German
+* Italian
 * Japanese
 * Norwegian
 * Portuguese
@@ -60,22 +61,22 @@ The localization also includes NSString-compatible format templates for phrases 
 
 To add your own localizations, copy the English localization within `SORelativeDateTransformer.bundle` directory to an appropriately named `.lproj` subdirectory, then edit the `.strings` file within that new localization subdirectory.
 
-For example, to add an Italian localization:
+For example, to add a Korean localization:
 
 	# Change working directory to the SORelativeDateTransformer.bundle
 	
 	cd ${PROJECT_DIR}/SORelativeDateTransformer.bundle
 	
 	# Copy the English localization subdirectory
-	# to an appropriately named lproj directory for an Italian localization
+	# to an appropriately named lproj directory for a Korean localization
 	
-	cp -R en.lproj it.lproj
+	cp -R en.lproj ko.lproj
 	
 	# Edit the .strings file within the Italian lproj directory
-	# to replace the English localization values with Italian equivalents.
+	# to replace the English localization values with Korean equivalents.
 	# Use your favorite UTF-16-capable text editor.
 	
-	mate it.lproj/SORelativeDateTransformer.strings
+	mate ko.lproj/SORelativeDateTransformer.strings
 
 ## Tester App ##
 
@@ -115,3 +116,5 @@ Brian Gesiak, for contributing the Japanese localization. [@github](https://gith
 Paulo André G Rodrigues, for contributing the Portuguese localization. [@github](https://github.com/pauloandreget).
 
 Ragnar Henriksen, for contributing the Norwegian localization. [@github](https://github.com/ragnar).
+
+Hjalti Jakobsson, for contributing the Italian localization. [@github](https://github.com/hjaltij).

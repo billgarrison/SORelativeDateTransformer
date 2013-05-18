@@ -31,6 +31,7 @@
 		6143EE571631527500AF766F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/TesterViewController.xib"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* RelativeDateDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RelativeDateDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		AD146F5C17412FC300205BB9 /* nb */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nb; path = nb.lproj/TesterViewController.xib; sourceTree = "<group>"; };
+		C00164F21741524100F26B56 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		DA300D8F16C8326F002E4C04 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		DAD012DB16C8311E00AF7B51 /* SORelativeDateTransformer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SORelativeDateTransformer.bundle; path = ../SORelativeDateTransformer/SORelativeDateTransformer.bundle; sourceTree = "<group>"; };
 		F202C6FF15DAE09A0090BD6C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TesterViewController.xib; sourceTree = "<group>"; };
@@ -176,6 +177,7 @@
 				ja,
 				pt,
 				nb,
+				it,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -227,6 +229,7 @@
 				DA300D8F16C8326F002E4C04 /* ja */,
 				3A188B56173989EB00EF631C /* pt */,
 				AD146F5C17412FC300205BB9 /* nb */,
+				C00164F21741524100F26B56 /* it */,
 			);
 			name = TesterViewController.xib;
 			sourceTree = "<group>";
