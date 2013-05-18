@@ -47,6 +47,7 @@ Included localizations:
 * French
 * German
 * Japanese
+* Norwegian
 * Portuguese
 * Spanish
 * Simplified Chinese
@@ -112,3 +113,5 @@ Vince Yuan, for contributing the Simplified & Traditional Chinese localizations.
 Brian Gesiak, for contributing the Japanese localization. [@github](https://github.com/modocache).
 
 Paulo André G Rodrigues, for contributing the Portuguese localization. [@github](https://github.com/pauloandreget).
+
+Ragnar Henriksen, for contributing the Norwegian localization. [@github](https://github.com/ragnar).
