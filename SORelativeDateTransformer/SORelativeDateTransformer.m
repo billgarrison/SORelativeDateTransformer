@@ -76,9 +76,7 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 		return SORelativeDateLocalizedString(@"now", @"label for current date-time");
 	}
 	
-	// Default return value is "now".
-	
-	id transformedValue = SORelativeDateLocalizedString(@"now", @"label for current date-time");
+	id transformedValue = nil;
 	
 	// Obtain the date components for the relative difference between the input date and now.
 	
@@ -142,6 +140,10 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 		
 	} // for loop
 	
+	// Default return value is "now".
+	if (!transformedValue) {
+		transformedValue = SORelativeDateLocalizedString(@"now", @"label for current date-time");
+	}
 	
 	return transformedValue;
 }
