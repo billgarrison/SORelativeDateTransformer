@@ -103,7 +103,7 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 		}
 		
 		// If the relative difference between the input date and now is 0 for the date component named in this iteration, press on.
-		// e.g. no difference between the month component of input date and now, continue iterating with the hour component next to be evaluated.
+		// e.g. no difference between the month component of input date and now, continue iterating with the week component next to be evaluated.
 		if (relativeDifference == 0) continue;
         
 		// Lookup the localized name to use for the data component in our class' strings file.

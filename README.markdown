@@ -118,3 +118,5 @@ Paulo André G Rodrigues, for contributing the Portuguese localization. [@github
 Ragnar Henriksen, for contributing the Norwegian localization. [@github](https://github.com/ragnar).
 
 Hjalti Jakobsson, for contributing the Italian localization. [@github](https://github.com/hjaltij).
+
+Michael Petrov, for a performance boost under frequent invocations. [@github](https://github.com/michaelpetrov).
