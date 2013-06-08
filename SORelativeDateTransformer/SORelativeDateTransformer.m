@@ -13,6 +13,8 @@
 #define __has_feature(x) 0
 #endif
 
+static SORelativeDateTransformer *_sharedInstance;
+
 @implementation SORelativeDateTransformer
 
 + (NSBundle *)bundle {
@@ -148,5 +150,16 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 	return transformedValue;
 }
 
++ (SORelativeDateTransformer *)shardTransformer{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedInstance = [[self alloc] init];
+    });
+    return _sharedInstance;
+}
+
++ (id)transformedValue:(id)value{
+    return [[self shardTransformer] transformedValue:value];
+}
 
 @end

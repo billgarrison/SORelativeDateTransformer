@@ -41,5 +41,6 @@ SORelativeDateTransformer is a value transformer that generates a human-readable
 \return An NSString with the generated and localized phrase.
 */
 - (id) transformedValue:(id)value;
++ (id) transformedValue:(id)value;
 
 @end
