@@ -31,8 +31,7 @@ Create an instance of SORelativeDateTransformer wherever you need to generate re
 	// fileModificationDate is 2010-10-01 12:00:00TZ; 
 	// Date now is 2010-10-30 12:00:00TZ
 	
-	SORelativeDateTransformer *relativeDateTransformer = [[SORelativeDateTransformer alloc] init];
-	NSString *relativeDate = [relativeDateTransformer transformedValue: dateModified];
+	NSString *relativeDate = [[SORelativeDateTransformer registeredTransformer] transformedValue:dateModified];
 	
 	NSLog (@"This file was modified %@.", relativeDate); // ==> "This file was modified 3 weeks ago."
 	
@@ -80,19 +79,15 @@ For example, to add a Korean localization:
 
 ## Tester App ##
 
-Included is an iOS 4 interactive testing application. You can a date from the date picker and see the generated relative date string below.
+Included is an iOS interactive testing application. You can a date from the date picker and see the generated relative date string below.
 
 ## Compatibility ##
 
-SORelativeDateTransformer is compatible with iOS 4 and later, and Mac OS X 10.4 and later. Supports use in ARC and non-ARC projects.
+SORelativeDateTransformer is compatible with iOS 4.3 and later, and Mac OS X 10.4 and later. Supports use in ARC and non-ARC projects.
 
 ## License ##
 
-Use it, hack it, but give me some love.
-
-![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png) [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
-
-For a non-attribution license, contact [http://standardorbit.net](http://standardorbit.net).
+MIT License. Use it, hack it, but give me some love.
 
 ## Credits
 
