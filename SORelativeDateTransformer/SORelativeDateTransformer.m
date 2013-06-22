@@ -1,19 +1,19 @@
 /*
  Created by William Garrison on 12/6/10.
- Copyright 2010-2012 Standard Orbit Software, LLC. All rights reserved.
+ Copyright Standard Orbit Software, LLC. All rights reserved.
  Derived in part from digdog's MIT-licensed NSDate-RelativeDate category method <https://github.com/digdog/NSDate-RelativeDate>
  
- This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License <http://creativecommons.org/licenses/by-sa/3.0/">
- Use it, hack it, but give me some love.
+ This code is MIT-licensed. Use it, hack it, but give me some love.
  */
 
 #import "SORelativeDateTransformer.h"
 
-#ifndef __has_feature
-#define __has_feature(x) 0
-#endif
-
 @implementation SORelativeDateTransformer
+
++ (NSValueTransformer *) registeredTransformer
+{
+    return [NSValueTransformer valueTransformerForName:NSStringFromClass(self)];
+}
 
 + (NSBundle *)bundle {
     static NSBundle *bundle = nil;
@@ -55,8 +55,7 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 }
 #endif
 
-#pragma mark -
-#pragma mark NSValueTransformer Overrides
+#pragma mark - NSValueTransformer Overrides
 
 + (Class) transformedValueClass
 {
