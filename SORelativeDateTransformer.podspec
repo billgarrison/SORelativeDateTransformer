@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = 'SORelativeDateTransformer'
-  s.version      = '1.1.8'
+  s.version      = '1.1.9'
   s.summary      = 'An NSValueTransformer subclass to turn an NSDate into a string expressing its relative age from now.'
   s.homepage     = 'https://github.com/billgarrison/SORelativeDateTransformer'
-  s.license      = 'Creative Commons Attribution-ShareAlike 3.0 Unported License (CC BY-SA 3.0)'
+  s.license      = 'MIT'
   s.author       = { 'billgarrison' => '1billgarrison@gmail.com' }
   s.source       = {
     :git => 'https://github.com/billgarrison/SORelativeDateTransformer.git',
-    :tag => '1.1.8'
+    :tag => "#{s.version}"
   }
   s.source_files = 'SORelativeDateTransformer/*.{h,m}'
   s.resources    = 'SORelativeDateTransformer/SORelativeDateTransformer.bundle'

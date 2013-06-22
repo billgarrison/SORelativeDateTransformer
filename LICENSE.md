@@ -1,19 +1,13 @@
 # License
 
-SORelativeDateTransformer is released under the CC BY-SA 3.0 license. If you would like a non-attribution license, contact me via [GitHub](https://github.com/billgarrison).
+SORelativeDateTransformer is released under the MIT license, as of release 1.1.9, 22 Jun 2013.
 
-![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png) [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
+Copyright (c) 2010-2013, Standard Orbit Software, LLC. All rights reserved. 
+ 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-## You are free to:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-* to Share -- to copy, distribute, and transmit the work
-* to Remix -- to adapt the work
-* to make commercial use of the work
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## Under the following conditions:
-
-* Share Alike - If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.
-* Attribution - You must attribute the work as
-
-> SORelativeDateTransformer, &copy;2010-2013 Standard Orbit Software, LLC. https://github.com/billgarrison/SORelativeDateTransformer
-
+Source available from [bitbucket.org/billgarrison](https://bitbucket.org/billgarrison/sorelativedatetransformer) or [github.com/billgarrison](https://github.com/billgarrison/SORelativeDateTransformer).
