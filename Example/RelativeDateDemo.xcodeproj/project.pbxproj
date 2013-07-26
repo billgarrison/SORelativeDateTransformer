@@ -30,6 +30,7 @@
 		6143EE561631527000AF766F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/TesterViewController.xib"; sourceTree = "<group>"; };
 		6143EE571631527500AF766F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/TesterViewController.xib"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* RelativeDateDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RelativeDateDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		A0B5915C17A2572C000DC886 /* ca */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ca; path = ca.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		AD146F5C17412FC300205BB9 /* nb */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nb; path = nb.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		C00164F21741524100F26B56 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		DA300D8F16C8326F002E4C04 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/TesterViewController.xib; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 				pt,
 				nb,
 				it,
+				ca,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -232,6 +234,7 @@
 				3A188B56173989EB00EF631C /* pt */,
 				AD146F5C17412FC300205BB9 /* nb */,
 				C00164F21741524100F26B56 /* it */,
+				A0B5915C17A2572C000DC886 /* ca */,
 			);
 			name = TesterViewController.xib;
 			sourceTree = "<group>";
