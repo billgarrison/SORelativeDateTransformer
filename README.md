@@ -117,4 +117,4 @@ Hjalti Jakobsson, for contributing the Italian localization. [@github](https://g
 
 Michael Petrov, for a performance boost under frequent invocations. [@github](https://github.com/michaelpetrov).
 
-[Lafosca](http://lafosca.cat), for contributing the Catalan localization. [@github](https://github.com/lafosca)
+David Cortés & [Lafosca](http://lafosca.cat), for contributing the Catalan localization. [@github](https://github.com/davebcn87)
