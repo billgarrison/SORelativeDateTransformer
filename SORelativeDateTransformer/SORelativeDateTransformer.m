@@ -25,6 +25,15 @@
     return bundle;
 }
 
++ (NSString *)currentLanguageID {
+    static NSString *languageID = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        languageID = [[[NSBundle mainBundle] preferredLocalizations] firstObject];
+    });
+    return languageID;
+}
+
 static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *comment) {
     return [[SORelativeDateTransformer bundle] localizedStringForKey:key value:nil table:@"SORelativeDateTransformer"];
 }
@@ -112,9 +121,35 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 			// E.g. @selector(year) ==> "year", @selector(month) ==> "month"
 			
 			NSString *localizedDateComponentKey = selectorName;
-			if (labs (relativeDifference) > 1) {
-				localizedDateComponentKey = [NSString stringWithFormat:@"%@s", selectorName];
-			}
+            
+            // Support languages with complex plural form (ex. russian)
+            if ([[SORelativeDateTransformer currentLanguageID] isEqualToString:@"ru"]) {
+                long n = labs(relativeDifference);
+                char form = 0;
+                int p = n % 100;
+                int t = n % 10;
+                if (p >= 11 && p <= 14) {
+                    form = 2;
+                } else {
+                    if (t == 1) {
+                        form = 0;
+                    } else if (t >= 2 && t <= 4) {
+                        form = 1;
+                    } else {
+                        form = 2;
+                    }
+                }
+                
+                if (form == 1) {
+                    localizedDateComponentKey = [NSString stringWithFormat:@"%@s", selectorName];
+                } else if (form == 2) {
+                    localizedDateComponentKey = [NSString stringWithFormat:@"%@z", selectorName];
+                }
+            } else {
+                if (labs (relativeDifference) > 1) {
+                    localizedDateComponentKey = [NSString stringWithFormat:@"%@s", selectorName];
+                }
+            }
 			localizedDateComponentName = SORelativeDateLocalizedString(localizedDateComponentKey, nil);
 		}
         

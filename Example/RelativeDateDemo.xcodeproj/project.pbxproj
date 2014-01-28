@@ -25,6 +25,7 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2AB6AD091898590300882679 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* RelativeDateDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateDemo_Prefix.pch; sourceTree = "<group>"; };
 		3A188B56173989EB00EF631C /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt; path = pt.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		6143EE561631527000AF766F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/TesterViewController.xib"; sourceTree = "<group>"; };
@@ -182,6 +183,7 @@
 				nb,
 				it,
 				ca,
+				ru,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -235,6 +237,7 @@
 				AD146F5C17412FC300205BB9 /* nb */,
 				C00164F21741524100F26B56 /* it */,
 				A0B5915C17A2572C000DC886 /* ca */,
+				2AB6AD091898590300882679 /* ru */,
 			);
 			name = TesterViewController.xib;
 			sourceTree = "<group>";
