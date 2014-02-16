@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12B6BD49055141619D02BF85 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 310461E1E033431E997F45F9 /* libPods.a */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -25,6 +26,8 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A1519A318B1216F00B9E5DE /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/TesterViewController.xib; sourceTree = "<group>"; };
+		310461E1E033431E997F45F9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CA4F630368D1EE00C91783 /* RelativeDateDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateDemo_Prefix.pch; sourceTree = "<group>"; };
 		3A188B56173989EB00EF631C /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt; path = pt.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		6143EE561631527000AF766F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/TesterViewController.xib"; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		C00164F21741524100F26B56 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		DA300D8F16C8326F002E4C04 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		DAD012DB16C8311E00AF7B51 /* SORelativeDateTransformer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SORelativeDateTransformer.bundle; path = ../SORelativeDateTransformer/SORelativeDateTransformer.bundle; sourceTree = "<group>"; };
+		DAF87D503CEC4175A959BAAF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F202C6FF15DAE09A0090BD6C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		F202C70115DAE0C90090BD6C /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		F202C70215DAE0D00090BD6C /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/TesterViewController.xib; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				12B6BD49055141619D02BF85 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				DAF87D503CEC4175A959BAAF /* Pods.xcconfig */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -115,6 +121,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				310461E1E033431E997F45F9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RelativeDateDemo" */;
 			buildPhases = (
+				7DA36FD2DB6D4F5690647E67 /* Check Pods Manifest.lock */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
+				5803D7EE007F45E8A8249BE5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +191,7 @@
 				nb,
 				it,
 				ca,
+				ru,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -204,6 +214,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5803D7EE007F45E8A8249BE5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DA36FD2DB6D4F5690647E67 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -235,6 +278,7 @@
 				AD146F5C17412FC300205BB9 /* nb */,
 				C00164F21741524100F26B56 /* it */,
 				A0B5915C17A2572C000DC886 /* ca */,
+				2A1519A318B1216F00B9E5DE /* ru */,
 			);
 			name = TesterViewController.xib;
 			sourceTree = "<group>";
@@ -244,6 +288,7 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF87D503CEC4175A959BAAF /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
@@ -251,7 +296,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RelativeDateDemo_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				INFOPLIST_FILE = "$(SRCROOT)/RelativeDateDemo-Info.plist";
 				PRODUCT_NAME = RelativeDateDemo;
 			};
@@ -259,6 +303,7 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF87D503CEC4175A959BAAF /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
