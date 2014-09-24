@@ -43,6 +43,13 @@
 + (NSValueTransformer *) registeredTransformer;
 
 /**
+ @brief Calendar used to compute date relative difference.
+ 
+ +[NSCalendar autoupdatingCurrentCalendar] will be used as default calendar if not set.
+ */
+@property (nonatomic, strong) NSCalendar *calendar;
+
+/**
  @brief Transform an NSDate into a phrase expressing the relative difference between that date and now.
  @param value An NSDate to be compared to the current date.
  @return An NSString with the generated and localized phrase.

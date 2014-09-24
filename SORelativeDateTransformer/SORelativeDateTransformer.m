@@ -10,6 +10,8 @@
 
 @implementation SORelativeDateTransformer
 
+@synthesize calendar = __calendar;
+
 + (NSValueTransformer *) registeredTransformer
 {
     return [NSValueTransformer valueTransformerForName:NSStringFromClass(self)];
