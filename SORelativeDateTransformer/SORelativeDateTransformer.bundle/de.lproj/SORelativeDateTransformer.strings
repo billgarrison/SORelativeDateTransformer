@@ -16,6 +16,8 @@
 "months" = "Monaten";
 "week" = "Woche";
 "weeks" = "Wochen";
+"weekOfMonth" = "Woche";
+"weekOfMonths" = "Wochen";
 "day" = "Tag";
 "days" = "Tagen";
 "hour" = "Stunde";

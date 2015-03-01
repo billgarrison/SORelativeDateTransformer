@@ -39,10 +39,16 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 #if !__has_feature(objc_arc)
     [__calendar retain];
 #endif
-    
+#if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000 || MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_10)
+    __unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekOfMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    __dateComponentSelectorNames =  [[NSArray alloc] initWithObjects:@"year", @"month", @"weekOfMonth", @"day", @"hour", @"minute", @"second", nil];
+
+#else
     __unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     __dateComponentSelectorNames =  [[NSArray alloc] initWithObjects:@"year", @"month", @"week", @"day", @"hour", @"minute", @"second", nil];
-	
+    
+#endif
+ 	
 	return self;
 }
 
