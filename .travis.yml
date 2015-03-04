@@ -1,3 +1,4 @@
 language: objective-c
 xcode_project: Example/RelativeDateDemo.xcodeproj
 xcode_scheme: RelativeDateDemo
+xctool -project Example/RelativeDateDemo.xcodeproj -scheme RelativeDateDemo clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
