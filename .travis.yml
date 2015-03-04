@@ -1,6 +1,3 @@
 language: objective-c
 xcode_project: Example/RelativeDateDemo.xcodeproj
 xcode_scheme: RelativeDateDemo
-
-script:
-  - xcodebuild [DEFAULT_OPTIONS] CODE_SIGNING_REQUIRED=NO
