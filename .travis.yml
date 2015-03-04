@@ -3,7 +3,7 @@ xcode_project: Example/RelativeDateDemo.xcodeproj
 xcode_scheme: RelativeDateDemo
 xcode_sdk: iphonesimulator
 script:
-  xctool -project Example/RelativeDateDemo.xcodeproj -scheme RelativeDateDemo clean test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  xctool -project Example/RelativeDateDemo.xcodeproj -scheme RelativeDateDemo clean test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator
 
   xctool -project Example/RelativeDateDemo.xcodeproj -scheme RelativeDateDemo clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
