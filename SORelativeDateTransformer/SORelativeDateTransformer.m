@@ -39,10 +39,16 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 #if !__has_feature(objc_arc)
     [__calendar retain];
 #endif
-    
+#if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000 || MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_10)
+    __unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekOfMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    __dateComponentSelectorNames =  [[NSArray alloc] initWithObjects:@"year", @"month", @"weekOfMonth", @"day", @"hour", @"minute", @"second", nil];
+
+#else
     __unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     __dateComponentSelectorNames =  [[NSArray alloc] initWithObjects:@"year", @"month", @"week", @"day", @"hour", @"minute", @"second", nil];
-	
+    
+#endif
+ 	
 	return self;
 }
 
@@ -83,11 +89,10 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 	
 	// Iterate the array of NSDateComponent selectors, which are sorted in decreasing order of time span: year, month, day, etc.
 	// For the first NSDateComponent time span method that returns a reasonable non-zero value, use that value to compute the relative-to-now date phrase string.
-	
-	
+   
 	for (NSString *selectorName in __dateComponentSelectorNames)
 	{
-		// Invoke the NSDateComponent selector matching the current iteration, and obtain the component's value.
+        // Invoke the NSDateComponent selector matching the current iteration, and obtain the component's value.
 		NSInteger relativeDifference = 0;
 		{
 			SEL currentSelector = NSSelectorFromString(selectorName);

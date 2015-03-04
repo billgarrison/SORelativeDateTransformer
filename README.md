@@ -1,4 +1,6 @@
-# SORelativeDateTransformer #
+# SORelativeDateTransformer  ![Alt Build](https://travis-ci.org/kamthamc/SORelativeDateTransformer.svg?branch=master)
+
+[Travis Build](https://travis-ci.org/kamthamc/SORelativeDateTransformer)
 
 SORelativeDateTransformer is a value transformer that generates a human-readable phrase expressing the relative difference between a given date and the current date.
 
