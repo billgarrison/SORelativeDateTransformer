@@ -89,11 +89,10 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 	
 	// Iterate the array of NSDateComponent selectors, which are sorted in decreasing order of time span: year, month, day, etc.
 	// For the first NSDateComponent time span method that returns a reasonable non-zero value, use that value to compute the relative-to-now date phrase string.
-	
-	
+   
 	for (NSString *selectorName in __dateComponentSelectorNames)
 	{
-		// Invoke the NSDateComponent selector matching the current iteration, and obtain the component's value.
+        // Invoke the NSDateComponent selector matching the current iteration, and obtain the component's value.
 		NSInteger relativeDifference = 0;
 		{
 			SEL currentSelector = NSSelectorFromString(selectorName);
