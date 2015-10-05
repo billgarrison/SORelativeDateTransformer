@@ -14,8 +14,8 @@
 "years" = "Jahren";
 "month" = "Monat";
 "months" = "Monaten";
-"week" = "Woche";
-"weeks" = "Wochen";
+"weekOfYear" = "Woche";
+"weekOfYears" = "Wochen";
 "day" = "Tag";
 "days" = "Tagen";
 "hour" = "Stunde";
