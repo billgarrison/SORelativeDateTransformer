@@ -1,42 +1,36 @@
 /*
-   @LANGUAGE Translation 
-   @DIRECTORY  
-   @FILE SORelativeDateTransformer.strings 
-*/
+ SORelativeDateTransformer.strings
+ 
+ Created by StdOrbit on 12/6/10.
+ Copyright 2010 Standard Orbit Software, LLC. All rights reserved.
+ */
 
-/* SORelativeDateTransformer.strings
-    Localization contributed by Ragnar Henriksen <https://github.com/ragnar/>, 2013-05-13 */
+/*
+ Phrase for expressing a date in the relative past. E.g. "12 minutes ago"
+ <relative time difference> <date component name> ago
+ */
 "formatTemplateForRelativePastDatePhrase" = "%d %@ geleden";
 
+/*
+ Phrase for expressing a date in the relative future. E.g. "in 12 minutes"
+ in <relative time difference> <date component name>
+ */
 "formatTemplateForRelativeFutureDatePhrase" = "over %d %@";
 
+/* localized date component names and plural forms */
 "now" = "nu";
-
 "year" = "jaar";
-
 "years" = "jaren";
-
 "month" = "maand";
-
 "months" = "maanden";
-
-"week" = "week";
-
-"weeks" = "weken";
-
+"weekOfYear" = "week";
+"weekOfYears" = "weken";
 "day" = "dag";
-
 "days" = "dagen";
-
 "hour" = "uur";
-
-"hours" = "uur";
-
+"hours" = "uren";
 "minute" = "minuut";
-
 "minutes" = "minuten";
-
 "second" = "seconde";
-
 "seconds" = "seconden";
 
