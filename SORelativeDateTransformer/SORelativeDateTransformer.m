@@ -8,6 +8,15 @@
 
 #import "SORelativeDateTransformer.h"
 
+@interface SORelativeDateTransformer ()
+{
+    NSCalendar *__calendar;
+    NSUInteger __unitFlags;
+    NSArray *__dateComponentSelectorNames;
+}
+
+@end
+
 @implementation SORelativeDateTransformer
 
 + (NSValueTransformer *) registeredTransformer
@@ -19,7 +28,7 @@
     static NSBundle *bundle = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSURL *url = [[NSBundle mainBundle] URLForResource:@"SORelativeDateTransformer" withExtension:@"bundle"];
+        NSURL *url = [[NSBundle bundleForClass:self] URLForResource:@"SORelativeDateTransformer" withExtension:@"bundle"];
         bundle = [[NSBundle alloc] initWithURL:url];
     });
     return bundle;
@@ -35,25 +44,12 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 	if (!self) return nil;
     
     __calendar = [NSCalendar autoupdatingCurrentCalendar];
-
-#if !__has_feature(objc_arc)
-    [__calendar retain];
-#endif
     
-    __unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
-    __dateComponentSelectorNames =  [[NSArray alloc] initWithObjects:@"year", @"month", @"week", @"day", @"hour", @"minute", @"second", nil];
+    __unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekOfYear | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    __dateComponentSelectorNames = @[@"year", @"month", @"weekOfYear", @"day", @"hour", @"minute", @"second"];
 	
 	return self;
 }
-
-#if !__has_feature(objc_arc)
-- (void) dealloc
-{
-	[__calendar release];
-	[__dateComponentSelectorNames release];
-	[super dealloc];
-}
-#endif
 
 #pragma mark - NSValueTransformer Overrides
 
@@ -70,8 +66,13 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 
 - (id) transformedValue:(id)value
 {
+    return [self transformedValue:value referenceValue:[NSDate date]];
+}
+
+- (id) transformedValue:(id)value referenceValue:(id)referenceValue
+{
 	// Return early if input is whacked
-	if ([value isKindOfClass:[NSDate class]] == NO) {
+	if (![value isKindOfClass:[NSDate class]]) {
 		return SORelativeDateLocalizedString(@"now", @"label for current date-time");
 	}
 	
@@ -79,7 +80,7 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 	
 	// Obtain the date components for the relative difference between the input date and now.
 	
-	NSDateComponents *relativeDifferenceComponents = [__calendar components:__unitFlags fromDate:value toDate:[NSDate date] options:0];
+	NSDateComponents *relativeDifferenceComponents = [__calendar components:__unitFlags fromDate:value toDate:referenceValue options:0];
 	
 	// Iterate the array of NSDateComponent selectors, which are sorted in decreasing order of time span: year, month, day, etc.
 	// For the first NSDateComponent time span method that returns a reasonable non-zero value, use that value to compute the relative-to-now date phrase string.
@@ -103,7 +104,8 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 		
 		// If the relative difference between the input date and now is 0 for the date component named in this iteration, press on.
 		// e.g. no difference between the month component of input date and now, continue iterating with the week component next to be evaluated.
-		if (relativeDifference == 0) continue;
+		if (relativeDifference == 0) 
+            continue;
         
 		// Lookup the localized name to use for the data component in our class' strings file.
 		NSString *localizedDateComponentName = nil;

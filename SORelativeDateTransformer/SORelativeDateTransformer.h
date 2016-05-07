@@ -27,12 +27,14 @@
 
 #import <Foundation/Foundation.h>
 
+//! Project version number for SORelativeDateTransformer.
+FOUNDATION_EXPORT double SORelativeDateTransformerVersionNumber;
+
+//! Project version string for SORelativeDateTransformer.
+FOUNDATION_EXPORT const unsigned char SORelativeDateTransformerVersionString[];
+
+
 @interface SORelativeDateTransformer : NSValueTransformer
-{
-	NSCalendar *__calendar;
-	NSUInteger __unitFlags;
-	NSArray *__dateComponentSelectorNames;
-}
 
 /**
  @brief The cached instance of the value transformer registered with NSValueTransformer's global cache.
@@ -48,5 +50,13 @@
  @return An NSString with the generated and localized phrase.
  */
 - (id) transformedValue:(id)value;
+
+/**
+ @brief Transform an NSDate into a phrase expressing the relative difference between that date and a reference date.
+ @param value An NSDate to be compared to the reference date.
+ @param referenceValue An NSDate to be used as a reference for obtaining the relative difference.
+ @return An NSString with the generated and localized phrase.
+ */
+- (id) transformedValue:(id)value referenceValue:(id)referenceValue;
 
 @end
