@@ -19,12 +19,15 @@
     static NSBundle *bundle = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        NSString *systemLanguage = [[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0];
+        
         NSURL *url = [[NSBundle mainBundle] URLForResource:@"SORelativeDateTransformer" withExtension:@"bundle"];
         bundle = [[NSBundle alloc] initWithURL:url];
+        NSString *path = [bundle pathForResource:systemLanguage ofType:@"lproj"];
+        bundle = [NSBundle bundleWithPath:path];
     });
     return bundle;
 }
-
 static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *comment) {
     return [[SORelativeDateTransformer bundle] localizedStringForKey:key value:nil table:@"SORelativeDateTransformer"];
 }
