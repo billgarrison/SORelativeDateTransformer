@@ -7,20 +7,20 @@
  German localization courtesy of Google Translate. <http://translate.google.com>
  */
 
-"formatTemplateForRelativePastDatePhrase" = "vor %d %@";
-"formatTemplateForRelativeFutureDatePhrase" = "in %d %@";
+"formatTemplateForRelativePastDatePhrase" = "vor %@";
+"formatTemplateForRelativeFutureDatePhrase" = "in %@";
 "now" = "jetzt";
-"year" = "Jahr";
-"years" = "Jahren";
-"month" = "Monat";
-"months" = "Monaten";
-"week" = "Woche";
-"weeks" = "Wochen";
-"day" = "Tag";
-"days" = "Tagen";
-"hour" = "Stunde";
-"hours" = "Stunden";
-"minute" = "Minute";
-"minutes" = "Minuten";
-"second" = "Sekunde";
-"seconds" = "Sekunden";
+"%d year (plural rule: one)" = "%d Jahr";
+"%d year (plural rule: other)" = "%d Jahren";
+"%d month (plural rule: one)" = "%d Monat";
+"%d month (plural rule: other)" = "%d Monaten";
+"%d week (plural rule: one)" = "%d Woche";
+"%d week (plural rule: other)" = "%d Wochen";
+"%d day (plural rule: one)" = "%d Tag";
+"%d day (plural rule: other)" = "%d Tagen";
+"%d hour (plural rule: one)" = "%d Stunde";
+"%d hour (plural rule: other)" = "%d Stunden";
+"%d minute (plural rule: one)" = "%d Minuten";
+"%d minute (plural rule: other)" = "%d Minuten";
+"%d second (plural rule: one)" = "%d Sekunde";
+"%d second (plural rule: other)" = "%d Sekunden";

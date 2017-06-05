@@ -7,6 +7,7 @@
  */
 
 #import "SORelativeDateTransformer.h"
+#import <TTTLocalizedPluralString/TTTLocalizedPluralString.h>
 
 @implementation SORelativeDateTransformer
 
@@ -21,12 +22,18 @@
     dispatch_once(&onceToken, ^{
         NSURL *url = [[NSBundle bundleForClass:self] URLForResource:@"SORelativeDateTransformer" withExtension:@"bundle"];
         bundle = [[NSBundle alloc] initWithURL:url];
+        NSString * language = [[NSLocale preferredLanguages] objectAtIndex:0];
+        NSLog(@"dd");
     });
     return bundle;
 }
 
 static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *comment) {
     return [[SORelativeDateTransformer bundle] localizedStringForKey:key value:nil table:@"SORelativeDateTransformer"];
+}
+
+static inline NSString *SORelativeDateLocalizedPluralString(NSInteger count, NSString *singular, NSString *comment) {
+    return TTTLocalizedPluralStringFromTableInBundle(count, singular, @"SORelativeDateTransformer", [SORelativeDateTransformer bundle], comment);
 }
 
 - (id) init
@@ -106,17 +113,7 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 		if (relativeDifference == 0) continue;
         
 		// Lookup the localized name to use for the data component in our class' strings file.
-		NSString *localizedDateComponentName = nil;
-		{
-			// Map the NSDateComponent method into a localization lookup key corresponding to a suitable calendar unit name, pluralizing the key as appropriate.
-			// E.g. @selector(year) ==> "year", @selector(month) ==> "month"
-			
-			NSString *localizedDateComponentKey = selectorName;
-			if (labs (relativeDifference) > 1) {
-				localizedDateComponentKey = [NSString stringWithFormat:@"%@s", selectorName];
-			}
-			localizedDateComponentName = SORelativeDateLocalizedString(localizedDateComponentKey, nil);
-		}
+		NSString *localizedDateComponentName = SORelativeDateLocalizedPluralString(labs(relativeDifference), selectorName, nil);
         
 		// Generate the langugage-friendly phrase representing the relative difference between the input date and now.
         
@@ -127,11 +124,11 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 		if (isRelativePastDate) {
 			// Fetch the string format template for relative past dates from the localization file and crunch out a formatted string.
 			NSString *pastDatePhraseTemplate = SORelativeDateLocalizedString(@"formatTemplateForRelativePastDatePhrase", nil);
-			transformedValue = [NSString stringWithFormat:pastDatePhraseTemplate, relativeDifference, localizedDateComponentName];
+			transformedValue = [NSString stringWithFormat:pastDatePhraseTemplate, localizedDateComponentName];
 		} else {
 			// Fetch the string format template for relative future dates from the localization file and crunch out a formatted string.
 			NSString *futureDatePhraseTemplate = SORelativeDateLocalizedString(@"formatTemplateForRelativeFutureDatePhrase", nil);
-			transformedValue = [NSString stringWithFormat:futureDatePhraseTemplate, labs (relativeDifference), localizedDateComponentName];
+			transformedValue = [NSString stringWithFormat:futureDatePhraseTemplate, localizedDateComponentName];
 		}
 		
 		// Break from the date components iteration loop after finding the first one with a non-zero relative difference value.

@@ -1,0 +1,12 @@
+PODS:
+  - TTTLocalizedPluralString (0.0.9)
+
+DEPENDENCIES:
+  - TTTLocalizedPluralString
+
+SPEC CHECKSUMS:
+  TTTLocalizedPluralString: 7077ba1ddf1cf557d14399c6f8db8962680b951b
+
+PODFILE CHECKSUM: 8126c9cb8d35c2c708b3169039a7f499cf95b1a2
+
+COCOAPODS: 1.2.0
