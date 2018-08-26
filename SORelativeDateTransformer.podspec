@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'SORelativeDateTransformer'
-  s.version      = '1.1.12'
+  s.version      = '1.1.13'
   s.summary      = 'An NSValueTransformer subclass to turn an NSDate into a string expressing its relative age from now.'
   s.homepage     = 'https://github.com/billgarrison/SORelativeDateTransformer'
   s.license      = 'MIT'
