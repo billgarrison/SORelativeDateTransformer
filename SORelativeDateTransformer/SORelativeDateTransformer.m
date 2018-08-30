@@ -7,7 +7,14 @@
  */
 
 #import "SORelativeDateTransformer.h"
-#import <TTTLocalizedPluralString/TTTLocalizedPluralString.h>
+#import "TTTLocalizedPluralString.h"
+
+@interface SORelativeDateTransformer()
+
+@property () NSNumberFormatter *numberFormatter;
+
+@end
+
 
 @implementation SORelativeDateTransformer
 
@@ -33,7 +40,8 @@ static inline NSString *SORelativeDateLocalizedString(NSString *key, NSString *c
 }
 
 static inline NSString *SORelativeDateLocalizedPluralString(NSInteger count, NSString *singular, NSString *comment) {
-    return TTTLocalizedPluralStringFromTableInBundle(count, singular, @"SORelativeDateTransformer", [SORelativeDateTransformer bundle], comment);
+	NSString *translatedString = TTTLocalizedPluralStringFromTableInBundleWithFormatter(count, singular, @"SORelativeDateTransformer", [SORelativeDateTransformer bundle], comment, ((SORelativeDateTransformer*)SORelativeDateTransformer.registeredTransformer).numberFormatter);
+    return translatedString;
 }
 
 - (id) init
@@ -49,6 +57,8 @@ static inline NSString *SORelativeDateLocalizedPluralString(NSInteger count, NSS
     
     __unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     __dateComponentSelectorNames =  [[NSArray alloc] initWithObjects:@"year", @"month", @"week", @"day", @"hour", @"minute", @"second", nil];
+	
+	self.numberFormatter = [NSNumberFormatter new];
 	
 	return self;
 }

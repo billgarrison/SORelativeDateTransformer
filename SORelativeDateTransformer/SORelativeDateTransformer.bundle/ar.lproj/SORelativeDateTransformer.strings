@@ -9,7 +9,7 @@
 Phrase for expressing a date in the relative past. E.g. "12 minutes ago"
 <relative time difference> <date component name> ago
 */
-"formatTemplateForRelativePastDatePhrase" = "%@ منذ";
+"formatTemplateForRelativePastDatePhrase" = "منذ %@";
 
 /* 
 Phrase for expressing a date in the relative future. E.g. "in 12 minutes"
@@ -19,38 +19,38 @@ in <relative time difference> <date component name>
 
 /* localized date component names and plural forms */
 "now" = "الأن";
-"%d year (plural rule: one)" = "سنة";
-"%d year (plural rule: two)" = "سنتان";
-"%d year (plural rule: few)" = "سنوات";
-"%d year (plural rule: many)" = "سنوات";
-"%d year (plural rule: other)" = "%d سنوات";
-"%d month (plural rule: one)" = "شهر";
-"%d month (plural rule: two)" = "شهران";
-"%d month (plural rule: few)" = "أشهر";
-"%d month (plural rule: many)" = "أشهر";
-"%d month (plural rule: other)" = "%d شهور";
-"%d week (plural rule: one)" = "أسبوع";
-"%d week (plural rule: two)" = "إسبوعان";
-"%d week (plural rule: few)" = "أسابيع";
-"%d week (plural rule: many)" = "أسابيع";
-"%d week (plural rule: other)" = "%d أسابيع";
-"%d day (plural rule: one)" = "يوم";
-"%d day (plural rule: two)" = "يومان";
-"%d day (plural rule: few)" = "أيام";
-"%d day (plural rule: many)" = "أيام";
-"%d day (plural rule: other)" = "%d أيام";
-"%d hour (plural rule: one)" = "ساعة";
-"%d hour (plural rule: two)" = "ساعتان";
-"%d hour (plural rule: few)" = "ساعات";
-"%d hour (plural rule: many)" = "ساعات";
-"%d hour (plural rule: other)" = "%d ساعات";
-"%d minute (plural rule: one)" = "دقيقة";
-"%d minute (plural rule: two)" = "دقيقتان";
-"%d minute (plural rule: few)" = "دقائق";
-"%d minute (plural rule: many)" = "دقائق";
-"%d minute (plural rule: other)" = "%d دقائق";
-"%d second (plural rule: one)" = "ثانية";
-"%d second (plural rule: two)" = "ثانيتان";
-"%d second (plural rule: few)" = "ثوان";
-"%d second (plural rule: many)" = "ثوان";
-"%d second (plural rule: other)" = "%d ثوانٍ";
+"%@ year (plural rule: one)" = "سنة";
+"%@ year (plural rule: two)" = "سنتان";
+"%@ year (plural rule: few)" = "%@ سنوات";
+"%@ year (plural rule: many)" = "%@ سنوات";
+"%@ year (plural rule: other)" = "%@ سنوات";
+"%@ month (plural rule: one)" = "شهر";
+"%@ month (plural rule: two)" = "شهران";
+"%@ month (plural rule: few)" = "%@ أشهر";
+"%@ month (plural rule: many)" = "%@ أشهر";
+"%@ month (plural rule: other)" = "%@ شهور";
+"%@ week (plural rule: one)" = "أسبوع";
+"%@ week (plural rule: two)" = "إسبوعان";
+"%@ week (plural rule: few)" = "%@ أسابيع";
+"%@ week (plural rule: many)" = "%@ أسابيع";
+"%@ week (plural rule: other)" = "%@ أسابيع";
+"%@ day (plural rule: one)" = "يوم";
+"%@ day (plural rule: two)" = "يومان";
+"%@ day (plural rule: few)" = "%@ أيام";
+"%@ day (plural rule: many)" = "%@ أيام";
+"%@ day (plural rule: other)" = "%@ أيام";
+"%@ hour (plural rule: one)" = "ساعة";
+"%@ hour (plural rule: two)" = "ساعتان";
+"%@ hour (plural rule: few)" = "%@ ساعات";
+"%@ hour (plural rule: many)" = "%@ ساعات";
+"%@ hour (plural rule: other)" = "%@ ساعات";
+"%@ minute (plural rule: one)" = "دقيقة";
+"%@ minute (plural rule: two)" = "دقيقتان";
+"%@ minute (plural rule: few)" = "%@ دقائق";
+"%@ minute (plural rule: many)" = "%@ دقائق";
+"%@ minute (plural rule: other)" = "%@ دقائق";
+"%@ second (plural rule: one)" = "ثانية";
+"%@ second (plural rule: two)" = "ثانيتان";
+"%@ second (plural rule: few)" = "%@ ثوان";
+"%@ second (plural rule: many)" = "%@ ثوان";
+"%@ second (plural rule: other)" = "%@ ثوانٍ";
