@@ -11,6 +11,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		4DC8470A9028731D12F3DDCF /* libPods-RelativeDateDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0CE37A32D55101D80DD155 /* libPods-RelativeDateDemo.a */; };
 		DAD012DC16C8311E00AF7B51 /* SORelativeDateTransformer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DAD012DB16C8311E00AF7B51 /* SORelativeDateTransformer.bundle */; };
 		F202C6FE15DAE09A0090BD6C /* TesterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F202C70015DAE09A0090BD6C /* TesterViewController.xib */; };
 		F2A33B3F12AD9CA400459019 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A33B3A12AD9CA400459019 /* AppDelegate.m */; };
@@ -27,14 +28,18 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* RelativeDateDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateDemo_Prefix.pch; sourceTree = "<group>"; };
 		3A188B56173989EB00EF631C /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt; path = pt.lproj/TesterViewController.xib; sourceTree = "<group>"; };
+		3D0CE37A32D55101D80DD155 /* libPods-RelativeDateDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RelativeDateDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6143EE561631527000AF766F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/TesterViewController.xib"; sourceTree = "<group>"; };
 		6143EE571631527500AF766F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/TesterViewController.xib"; sourceTree = "<group>"; };
+		7922380FAF35FA085BB8F6DC /* Pods-RelativeDateDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelativeDateDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RelativeDateDemo/Pods-RelativeDateDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* RelativeDateDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RelativeDateDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		913F7581CC9225DE36466964 /* Pods-RelativeDateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelativeDateDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RelativeDateDemo/Pods-RelativeDateDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A0B5915C17A2572C000DC886 /* ca */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ca; path = ca.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		AD146F5C17412FC300205BB9 /* nb */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nb; path = nb.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		C00164F21741524100F26B56 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		DA300D8F16C8326F002E4C04 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		DAD012DB16C8311E00AF7B51 /* SORelativeDateTransformer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SORelativeDateTransformer.bundle; path = ../SORelativeDateTransformer/SORelativeDateTransformer.bundle; sourceTree = "<group>"; };
+		EC27E2BE1EE5619100217407 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		F202C6FF15DAE09A0090BD6C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		F202C70115DAE0C90090BD6C /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/TesterViewController.xib; sourceTree = "<group>"; };
 		F202C70215DAE0D00090BD6C /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/TesterViewController.xib; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				4DC8470A9028731D12F3DDCF /* libPods-RelativeDateDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +92,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				C7E1FD2F5F5C49BB68A44AF1 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -115,8 +122,18 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				3D0CE37A32D55101D80DD155 /* libPods-RelativeDateDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7E1FD2F5F5C49BB68A44AF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				913F7581CC9225DE36466964 /* Pods-RelativeDateDemo.debug.xcconfig */,
+				7922380FAF35FA085BB8F6DC /* Pods-RelativeDateDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		F2A33B3412AD9C7C00459019 /* Tester App Source */ = {
@@ -137,9 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RelativeDateDemo" */;
 			buildPhases = (
+				690D5FDD3B1C7CD74DE3C205 /* [CP] Check Pods Manifest.lock */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
+				F20D1E43E8B7F784116C72C3 /* [CP] Embed Pods Frameworks */,
+				3E57E9F884858182BDD0134C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,8 +202,10 @@
 				nb,
 				it,
 				ca,
+				ru,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -204,6 +226,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E57E9F884858182BDD0134C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RelativeDateDemo/Pods-RelativeDateDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		690D5FDD3B1C7CD74DE3C205 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F20D1E43E8B7F784116C72C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RelativeDateDemo/Pods-RelativeDateDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -235,6 +305,7 @@
 				AD146F5C17412FC300205BB9 /* nb */,
 				C00164F21741524100F26B56 /* it */,
 				A0B5915C17A2572C000DC886 /* ca */,
+				EC27E2BE1EE5619100217407 /* ru */,
 			);
 			name = TesterViewController.xib;
 			sourceTree = "<group>";
@@ -244,6 +315,7 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913F7581CC9225DE36466964 /* Pods-RelativeDateDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
@@ -259,6 +331,7 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7922380FAF35FA085BB8F6DC /* Pods-RelativeDateDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;

@@ -1,4 +1,4 @@
-﻿/* 
+/* 
  SORelativeDateTransformer.strings
  
  Created by StdOrbit on 12/6/10.
@@ -7,20 +7,20 @@
  German localization courtesy of Google Translate. <http://translate.google.com>
  */
 
-"formatTemplateForRelativePastDatePhrase" = "vor %d %@";
-"formatTemplateForRelativeFutureDatePhrase" = "in %d %@";
+"formatTemplateForRelativePastDatePhrase" = "vor %@";
+"formatTemplateForRelativeFutureDatePhrase" = "in %@";
 "now" = "jetzt";
-"year" = "Jahr";
-"years" = "Jahren";
-"month" = "Monat";
-"months" = "Monaten";
-"week" = "Woche";
-"weeks" = "Wochen";
-"day" = "Tag";
-"days" = "Tagen";
-"hour" = "Stunde";
-"hours" = "Stunden";
-"minute" = "Minute";
-"minutes" = "Minuten";
-"second" = "Sekunde";
-"seconds" = "Sekunden";
+"%@ year (plural rule: one)" = "%@ Jahr";
+"%@ year (plural rule: other)" = "%@ Jahren";
+"%@ month (plural rule: one)" = "%@ Monat";
+"%@ month (plural rule: other)" = "%@ Monaten";
+"%@ week (plural rule: one)" = "%@ Woche";
+"%@ week (plural rule: other)" = "%@ Wochen";
+"%@ day (plural rule: one)" = "%@ Tag";
+"%@ day (plural rule: other)" = "%@ Tagen";
+"%@ hour (plural rule: one)" = "%@ Stunde";
+"%@ hour (plural rule: other)" = "%@ Stunden";
+"%@ minute (plural rule: one)" = "%@ Minuten";
+"%@ minute (plural rule: other)" = "%@ Minuten";
+"%@ second (plural rule: one)" = "%@ Sekunde";
+"%@ second (plural rule: other)" = "%@ Sekunden";

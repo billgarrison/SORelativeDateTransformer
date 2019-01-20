@@ -1,0 +1,56 @@
+/* 
+   SORelativeDateTransformer.strings
+
+   Created by StdOrbit on 12/6/10.
+   Copyright 2010 Standard Orbit Software, LLC. All rights reserved.
+ */
+
+/* 
+Phrase for expressing a date in the relative past. E.g. "12 minutes ago"
+<relative time difference> <date component name> ago
+*/
+"formatTemplateForRelativePastDatePhrase" = "منذ %@";
+
+/* 
+Phrase for expressing a date in the relative future. E.g. "in 12 minutes"
+in <relative time difference> <date component name>
+*/
+"formatTemplateForRelativeFutureDatePhrase" = "في خلال %@";
+
+/* localized date component names and plural forms */
+"now" = "الأن";
+"%@ year (plural rule: one)" = "سنة";
+"%@ year (plural rule: two)" = "سنتان";
+"%@ year (plural rule: few)" = "%@ سنوات";
+"%@ year (plural rule: many)" = "%@ سنوات";
+"%@ year (plural rule: other)" = "%@ سنوات";
+"%@ month (plural rule: one)" = "شهر";
+"%@ month (plural rule: two)" = "شهران";
+"%@ month (plural rule: few)" = "%@ أشهر";
+"%@ month (plural rule: many)" = "%@ أشهر";
+"%@ month (plural rule: other)" = "%@ شهور";
+"%@ week (plural rule: one)" = "أسبوع";
+"%@ week (plural rule: two)" = "إسبوعان";
+"%@ week (plural rule: few)" = "%@ أسابيع";
+"%@ week (plural rule: many)" = "%@ أسابيع";
+"%@ week (plural rule: other)" = "%@ أسابيع";
+"%@ day (plural rule: one)" = "يوم";
+"%@ day (plural rule: two)" = "يومان";
+"%@ day (plural rule: few)" = "%@ أيام";
+"%@ day (plural rule: many)" = "%@ أيام";
+"%@ day (plural rule: other)" = "%@ أيام";
+"%@ hour (plural rule: one)" = "ساعة";
+"%@ hour (plural rule: two)" = "ساعتان";
+"%@ hour (plural rule: few)" = "%@ ساعات";
+"%@ hour (plural rule: many)" = "%@ ساعات";
+"%@ hour (plural rule: other)" = "%@ ساعات";
+"%@ minute (plural rule: one)" = "دقيقة";
+"%@ minute (plural rule: two)" = "دقيقتان";
+"%@ minute (plural rule: few)" = "%@ دقائق";
+"%@ minute (plural rule: many)" = "%@ دقائق";
+"%@ minute (plural rule: other)" = "%@ دقائق";
+"%@ second (plural rule: one)" = "ثانية";
+"%@ second (plural rule: two)" = "ثانيتان";
+"%@ second (plural rule: few)" = "%@ ثوان";
+"%@ second (plural rule: many)" = "%@ ثوان";
+"%@ second (plural rule: other)" = "%@ ثوانٍ";
